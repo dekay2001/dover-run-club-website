@@ -4,8 +4,8 @@ email: yourclub@example.com
 description: >-
   A community for runners of all abilities. Join us for weekly runs,
   pub runs, races, and social events. All paces welcome!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+baseurl: "/dover-run-club-website" # the subpath of your site, e.g. /blog
+url: "https://dekay2001.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
