@@ -1,10 +1,10 @@
-# SIX03 Run Club Website
+# Run Club Website
 
-Static website for SIX03 Run Club — built with Jekyll and hosted on GitHub Pages. Includes race calendar, pub run info, membership details, and sponsor highlights.
+Static website for a local run club — built with Jekyll and hosted on GitHub Pages. Includes race calendar, pub run info, membership details, and sponsor highlights.
 
 ## 🏃 About
 
-This is the official website for SIX03 Run Club, Dover's premier running community. The site features:
+This is a running club website template. The site features:
 
 - **Events Calendar** - Weekly runs and upcoming races
 - **Pub Runs** - Social runs ending at local pubs
@@ -86,7 +86,7 @@ To use a custom domain instead of `username.github.io/repository`:
 
 1. **Update CNAME file**
    - Edit the `CNAME` file in the root directory
-   - Replace the placeholder with your domain (e.g., `six03runclub.com`)
+   - Replace the placeholder with your domain (e.g., `yourclub.com`)
    - Uncomment the domain line
 
 2. **Configure DNS Settings**
@@ -181,7 +181,7 @@ Modify footer content in `_includes/footer.html`
 
 ## 📝 License
 
-This project is open source and available under the MIT License.
+This project is open source and available under the [GPL-3.0 License](LICENSE).
 
 ## 🤝 Contributing
 
@@ -189,8 +189,8 @@ Have suggestions or found a bug? Please open an issue or submit a pull request!
 
 ## 📧 Contact
 
-For questions about the club, visit our website or email us at info@six03runclub.com
+For questions about the club, visit our website or email us at yourclub@example.com
 
 ---
 
-Built with ❤️ by Dover's running community
+Built with ❤️ for the running community

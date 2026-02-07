@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Pub Runs
-description: Combining running with social fun at local Dover pubs
+description: Combining running with social fun at local pubs
 ---
 
 ## What's a Pub Run?
@@ -17,21 +17,13 @@ Pub runs are one of our most popular activities! We meet up for a casual run (us
 
 **Every Wednesday at 6:00 PM**
 
-We rotate through Dover's best pubs and restaurants. All paces welcome - we typically have a faster group (7:30-8:30/mile) and a more social group (9:00-11:00/mile).
+We rotate through local pubs and restaurants. All paces welcome - we typically have a faster group (7:30-8:30/mile) and a more social group (9:00-11:00/mile).
 
 ### Upcoming Pub Run Locations
 
-**February 2026**
-- Feb 5: The Running Tap & Grill - 3.5 miles
-- Feb 12: Dover Brewery - 4 miles
-- Feb 19: The Runner's Den Pub - 5 miles
-- Feb 26: Main Street Tavern - 3 miles
+<!-- TODO: Add pub run schedule with actual locations -->
 
-**March 2026**
-- Mar 5: Riverside Brewing Company - 4 miles
-- Mar 12: The Finish Line Bar - 3.5 miles
-- Mar 19: Dover Public House - 5 miles
-- Mar 26: Track & Field Taproom - 4 miles
+Check back soon for our upcoming pub run schedule!
 
 ## What to Expect
 
@@ -51,12 +43,13 @@ We rotate through Dover's best pubs and restaurants. All paces welcome - we typi
 
 ## Partner Pubs
 
-We partner with local establishments that support our running community. Many offer special discounts for SIX03 members!
+We partner with local establishments that support our running community.
 
 ### Current Partners:
-- **The Running Tap & Grill** - 10% off food for club members
-- **Dover Brewery** - $1 off craft beers for runners
-- **Riverside Brewing Company** - Complimentary appetizer for groups of 4+
+
+<!-- TODO: Add partner pub details -->
+
+Coming soon!
 
 ---
 

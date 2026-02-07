@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Membership
-description: Join SIX03 Run Club and become part of Dover's running community
+description: Join our club and become part of the running community
 ---
 
 ## Become a Member
 
-Joining SIX03 Run Club is easy and affordable! We welcome runners of all abilities, from beginners to experienced marathoners.
+Joining {{ site.title }} is easy and affordable! We welcome runners of all abilities, from beginners to experienced marathoners.
 
 ### Membership Benefits
 
@@ -17,17 +17,17 @@ Joining SIX03 Run Club is easy and affordable! We welcome runners of all abiliti
 ✅ **Training Plans** - Free access to structured training programs  
 ✅ **Club Gear** - Exclusive club apparel and merchandise discounts  
 ✅ **Partner Discounts** - Special offers from local running stores and pubs  
-✅ **Online Community** - Access to our private Facebook group and Strava club  
+✅ **Online Community** - Access to our private online group  
 
 ### Membership Tiers
 
-#### Individual Membership - $40/year
+#### Individual Membership - $XX/year
 Perfect for solo runners who want to join the community.
 
-#### Family Membership - $60/year
+#### Family Membership - $XX/year
 Great value for households with multiple runners (up to 4 family members).
 
-#### Student Membership - $25/year
+#### Student Membership - $XX/year
 Discounted rate for full-time students (valid student ID required).
 
 #### Trial Membership - FREE
@@ -37,9 +37,9 @@ Try us out! Attend 3 group runs for free before committing to membership.
 
 1. **Try Us Out** - Come to any group run as a guest (first 3 runs are free!)
 2. **Sign Up** - Fill out our [membership form](#) (coming soon)
-3. **Pay Dues** - Submit payment via Venmo, PayPal, or check
+3. **Pay Dues** - TODO: Payment method details coming soon
 4. **Get Your Gear** - Order your club singlet or tech tee
-5. **Start Running!** - You're officially part of the SIX03 family
+5. **Start Running!** - You're officially part of the {{ site.title }} family
 
 ### Membership Year
 

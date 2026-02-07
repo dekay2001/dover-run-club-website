@@ -4,8 +4,8 @@ title: Home
 ---
 
 <div class="hero">
-    <h1>Welcome to SIX03 Run Club</h1>
-    <p>Dover's premier running community - all paces welcome!</p>
+    <h1>Welcome to {{ site.title }}</h1>
+    <p>A community for runners of all abilities - all paces welcome!</p>
     <a href="{{ '/membership.html' | relative_url }}" class="cta-button">Join Us Today</a>
 </div>
 
@@ -36,10 +36,10 @@ title: Home
 </div>
 
 <div class="page">
-    <h2>About SIX03 Run Club</h2>
+    <h2>About {{ site.title }}</h2>
     <p>
-        Founded in Dover, SIX03 Run Club is a welcoming community for runners of all abilities. 
-        Whether you're just starting your running journey or you're a seasoned marathoner, 
+        {{ site.title }} is a welcoming community for runners of all abilities.
+        Whether you're just starting your running journey or you're a seasoned marathoner,
         you'll find your place with us.
     </p>
     <p>
@@ -54,6 +54,6 @@ title: Home
         <li><strong>Expert Coaching:</strong> Get guidance from experienced runners and coaches</li>
         <li><strong>Social Events:</strong> Pub runs, race day celebrations, and more</li>
         <li><strong>Safety in Numbers:</strong> Run with a group for motivation and safety</li>
-        <li><strong>Local Routes:</strong> Discover the best running paths in Dover</li>
+        <li><strong>Local Routes:</strong> Discover the best running paths in the area</li>
     </ul>
 </div>

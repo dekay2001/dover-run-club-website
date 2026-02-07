@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Events & Race Calendar
-description: Upcoming runs, races, and club events for SIX03 Run Club
+description: Upcoming runs, races, and club events
 ---
 
 ## Upcoming Events
@@ -12,19 +12,19 @@ Stay tuned for our 2026 race calendar! We're planning an exciting lineup of even
 
 **Tuesday Night Track**
 - **Time:** 6:30 PM
-- **Location:** Dover High School Track
+- **Location:** TODO: Location TBD
 - **Distance:** Interval training, various distances
 - **Pace:** Multiple groups available
 
 **Thursday Evening Group Run**
 - **Time:** 6:00 PM
-- **Location:** Dover Town Square
+- **Location:** TODO: Location TBD
 - **Distance:** 5-8 miles
 - **Pace:** Multiple groups from 8:00/mile to 11:00/mile
 
 **Saturday Morning Long Run**
 - **Time:** 7:00 AM
-- **Location:** Dover Community Center
+- **Location:** TODO: Location TBD
 - **Distance:** 8-15 miles
 - **Pace:** Conversational pace groups
 
@@ -33,7 +33,7 @@ Stay tuned for our 2026 race calendar! We're planning an exciting lineup of even
 Check back soon for our 2026 race schedule! We typically participate in:
 
 - **Spring 5K Series** - March through May
-- **SIX03 Summer Half Marathon** - July
+- **Summer Half Marathon** - July
 - **Fall Marathon Training** - September through November
 - **Turkey Trot** - Thanksgiving Day
 
@@ -50,7 +50,7 @@ Check back soon for our 2026 race schedule! We typically participate in:
 Looking back at our amazing 2025 season:
 - Completed over 50 group runs
 - 30+ members ran marathons
-- Raised $5,000 for local charities
+- Raised money for local charities
 
 ---
 

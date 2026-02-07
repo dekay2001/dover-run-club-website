@@ -1,6 +1,6 @@
 # GitHub Pages Setup Instructions
 
-This document provides step-by-step instructions for deploying the SIX03 Run Club website to GitHub Pages.
+This document provides step-by-step instructions for deploying the Run Club website to GitHub Pages.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ Once deployed, your site will be available at:
 
 ## Step 3: Configure Custom Domain (Optional)
 
-To use a custom domain (e.g., `six03runclub.com` or `www.six03runclub.com`):
+To use a custom domain (e.g., `yourclub.com` or `www.yourclub.com`):
 
 ### A. Purchase and Configure Domain
 
@@ -66,7 +66,7 @@ To use a custom domain (e.g., `six03runclub.com` or `www.six03runclub.com`):
 1. Edit the `CNAME` file in the root of your repository
 2. Replace the commented content with your actual domain:
    ```
-   six03runclub.com
+   yourclub.com
    ```
    (Do not include `http://` or `https://`)
 

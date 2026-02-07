@@ -1,8 +1,8 @@
 # Site settings
-title: SIX03 Run Club
-email: info@six03runclub.com
+title: Run Club
+email: yourclub@example.com
 description: >-
-  Dover's premier running community. Join us for weekly runs, 
+  A community for runners of all abilities. Join us for weekly runs,
   pub runs, races, and social events. All paces welcome!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
