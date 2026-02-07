@@ -1,0 +1,38 @@
+# Site settings
+title: Run Club
+email: yourclub@example.com
+description: >-
+  A community for runners of all abilities. Join us for weekly runs,
+  pub runs, races, and social events. All paces welcome!
+baseurl: "/dover-run-club-website" # the subpath of your site, e.g. /blog
+url: "https://dekay2001.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+
+# Collections for organizing content
+collections:
+  events:
+    output: true
+    permalink: /events/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "page"
