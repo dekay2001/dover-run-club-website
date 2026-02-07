@@ -35,4 +35,4 @@ defaults:
       path: ""
       type: "events"
     values:
-      layout: "event"
+      layout: "page"

@@ -85,9 +85,9 @@ This site is designed to work seamlessly with GitHub Pages:
 To use a custom domain instead of `username.github.io/repository`:
 
 1. **Update CNAME file**
-   - Edit the `CNAME` file in the root directory
-   - Replace the placeholder with your domain (e.g., `yourclub.com`)
-   - Uncomment the domain line
+   - Create or edit the `CNAME` file in the root directory
+   - Ensure it contains exactly one line with your domain name (e.g., `six03runclub.com`) and no other text or comments
+   - If you are not using a custom domain yet, you can delete the `CNAME` file or leave it untracked
 
 2. **Configure DNS Settings**
    
