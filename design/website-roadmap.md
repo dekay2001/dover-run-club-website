@@ -51,8 +51,9 @@ These are things we may want to add down the road. Nothing here is committed —
 - Could be a grid of images from Tuesday runs
 - Consider hosting images in `/assets/images/` or linking from an external service
 
-#### 🔗 Social Media Links
-- Add links to Facebook and/or Instagram pages in the header or footer
+#### 🔗 Additional Social Media Links
+- Strava link is already implemented in the footer
+- Future: Add links to Facebook and/or Instagram pages if/when those are created
 - Could use simple icon links (no heavy icon library needed)
 
 ### Medium-Term (if there's demand)

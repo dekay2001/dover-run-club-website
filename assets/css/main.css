@@ -177,12 +177,6 @@ a:hover {
     color: var(--color-accent);
 }
 
-.nav-strava {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-
 /* Main Content */
 main {
     min-height: calc(100vh - 200px);
@@ -339,13 +333,6 @@ main {
     position: absolute;
     left: 0;
     top: 0.1rem;
-}
-
-/* Social Icon */
-.social-icon {
-    width: 18px;
-    height: 18px;
-    fill: currentColor;
 }
 
 /* Footer */
