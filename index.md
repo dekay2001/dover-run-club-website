@@ -4,56 +4,60 @@ title: Home
 ---
 
 <div class="hero">
-    <h1>Welcome to {{ site.title }}</h1>
-    <p>A community for runners of all abilities - all paces welcome!</p>
-    <a href="{{ '/membership.html' | relative_url }}" class="cta-button">Join Us Today</a>
+    <h1>Dover Run Club</h1>
+    <p class="hero-tagline">"We run and then we pub, in that order"</p>
+    <p>Tuesday nights · 6 PM · The Brick · Dover, NH</p>
+</div>
+
+<div class="hero-image">
+    <img src="{{ '/assets/images/dpr-group-photo.jpg' | relative_url }}" alt="Dover Run Club group photo">
 </div>
 
 <div class="cards">
     <div class="card">
-        <h3>🏃 Weekly Runs</h3>
-        <p>Join us for group runs every week. Whether you're training for a race or just staying fit, there's a pace group for you.</p>
-        <a href="{{ '/events.html' | relative_url }}">View Schedule →</a>
+        <h3>🏃 When & Where</h3>
+        <p>Every Tuesday at 6 PM we meet at <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> in downtown Dover, NH. Show up, say hi, and run.</p>
     </div>
     
     <div class="card">
-        <h3>🍺 Pub Runs</h3>
-        <p>Combine running with socializing! Our famous pub runs end at local pubs where we enjoy refreshments and great company.</p>
-        <a href="{{ '/pub-runs.html' | relative_url }}">Learn More →</a>
+        <h3>🗺️ Variety of Routes</h3>
+        <p>We mix it up each week with different routes around Dover. Favorites include the <strong><a href="https://www.doverraceseries.org/" target="_blank" rel="noopener">Dover Red 5-miler</a></strong>, Mount Vernon, Washington, and parts of the community trail. Road routes with hills and flats.</p>
     </div>
     
     <div class="card">
-        <h3>🏅 Race Events</h3>
-        <p>From 5Ks to marathons, we organize and participate in races throughout the year. Train together, race together!</p>
-        <a href="{{ '/events.html' | relative_url }}">See Events →</a>
+        <h3>🍺 Post-Run Hangs</h3>
+        <p>The best part? We finish back at The Brick for food, drinks, and good company. Running is just the excuse to hang out.</p>
     </div>
     
     <div class="card">
-        <h3>🤝 Community</h3>
-        <p>More than just running - we're a community. Make friends, support each other, and celebrate achievements together.</p>
-        <a href="{{ '/membership.html' | relative_url }}">Become a Member →</a>
+        <h3>👥 All Paces Welcome</h3>
+        <p>Fast, slow, somewhere in between — doesn't matter. We have runners of all abilities and everyone finds their group.</p>
     </div>
 </div>
 
 <div class="page">
-    <h2>About {{ site.title }}</h2>
+    <h2>About Us</h2>
     <p>
-        {{ site.title }} is a welcoming community for runners of all abilities.
-        Whether you're just starting your running journey or you're a seasoned marathoner,
-        you'll find your place with us.
+        {{ site.title }} has a long history of Tuesday night runs in Dover.
+        What started as a regular pub run has grown into a large, loyal group of runners
+        who show up rain or shine, summer or winter.
     </p>
     <p>
-        We believe running should be fun, social, and accessible to everyone. Our club offers 
-        regular group runs, training programs, social events, and the support of fellow runners 
-        who share your passion.
+        There's no membership fee, no sign-up sheet, and no pressure. Just show up at
+        <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> on Tuesdays at 6 PM and you're part of the crew. We run a variety of
+        routes around Dover and the surrounding area, and everyone ends up back at the
+        pub afterward.
     </p>
     
-    <h3>Why Join Us?</h3>
+    <h3>What to Expect</h3>
     <ul>
-        <li><strong>All Paces Welcome:</strong> We have groups for every speed and distance</li>
-        <li><strong>Expert Coaching:</strong> Get guidance from experienced runners and coaches</li>
-        <li><strong>Social Events:</strong> Pub runs, race day celebrations, and more</li>
-        <li><strong>Safety in Numbers:</strong> Run with a group for motivation and safety</li>
-        <li><strong>Local Routes:</strong> Discover the best running paths in the area</li>
+        <li><strong>No experience needed:</strong> Whether it's your first run or your thousandth, you're welcome</li>
+        <li><strong>Multiple pace groups:</strong> You'll find people running your speed</li>
+        <li><strong>Social vibes:</strong> Half the fun is the post-run hangout at <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong></li>
+        <li><strong>Year-round:</strong> We run every Tuesday, all year long</li>
     </ul>
+
+    <!-- TODO: Add a photo gallery section here -->
+    <h3>Photos</h3>
+    <p><em>Photos coming soon! We'll be sharing shots from our Tuesday runs.</em></p>
 </div>

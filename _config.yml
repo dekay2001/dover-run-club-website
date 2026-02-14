@@ -1,9 +1,8 @@
 # Site settings
-title: Run Club
-email: yourclub@example.com
+title: Dover Run Club
 description: >-
-  A community for runners of all abilities. Join us for weekly runs,
-  pub runs, races, and social events. All paces welcome!
+  Tuesday nights at 6pm from The Brick in Dover, NH.
+  A community of runners exploring a variety of routes — all paces welcome!
 baseurl: "/dover-run-club-website" # the subpath of your site, e.g. /blog
 url: "https://dekay2001.github.io" # the base hostname & protocol for your site
 
