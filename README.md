@@ -1,15 +1,15 @@
-# Run Club Website
+# Dover Run Club Website
 
-Static website for a local run club — built with Jekyll and hosted on GitHub Pages. Includes race calendar, pub run info, membership details, and sponsor highlights.
+Website for the Dover Run Club — Tuesday nights at 6 PM from The Brick in Dover, NH. Built with Jekyll and hosted on GitHub Pages.
 
 ## 🏃 About
 
-This is a running club website template. The site features:
+Dover Run Club is a casual, social running group with a long history of Tuesday night runs in Dover, NH. All paces welcome. This site is currently a single-page site focused on the essentials. See [design/website-roadmap.md](design/website-roadmap.md) for future plans.
 
-- **Events Calendar** - Weekly runs and upcoming races
-- **Pub Runs** - Social runs ending at local pubs
-- **Membership Information** - How to join and member benefits
-- **Sponsor Recognition** - Thanking our community partners
+The site includes:
+
+- **Homepage** - Club info, schedule (Tuesdays 6 PM at The Brick), and about section
+- **Hidden pages** - Events, Pub Runs, Membership, and Sponsors pages exist but are not yet linked (reserved for future use)
 
 ## 🚀 Quick Start
 
@@ -189,8 +189,8 @@ Have suggestions or found a bug? Please open an issue or submit a pull request!
 
 ## 📧 Contact
 
-For questions about the club, visit our website or email us at yourclub@example.com
+For questions about the club, visit our website or find us on our Tuesday runs at The Brick!
 
 ---
 
-Built with ❤️ for the running community
+Built with ❤️ for the Dover running community

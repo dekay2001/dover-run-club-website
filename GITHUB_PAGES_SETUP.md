@@ -75,7 +75,7 @@ To use a custom domain (e.g., `yourclub.com` or `www.yourclub.com`):
 ### C. Configure in GitHub Settings
 
 1. Go to repository **Settings** > **Pages**
-2. In the **Custom domain** field, enter your domain (e.g., `six03runclub.com`)
+2. In the **Custom domain** field, enter your domain (e.g., `doverrunclub.com`)
 3. Click **Save**
 4. Wait for DNS check to complete (may take up to 24-48 hours)
 5. Once DNS is verified, enable **Enforce HTTPS** (highly recommended)
