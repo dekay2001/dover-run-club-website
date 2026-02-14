@@ -197,18 +197,6 @@ main {
     text-shadow: 0 4px 20px var(--color-glow);
 }
 
-.dpr-badge {
-    display: inline-block;
-    font-size: 0.6em;
-    background: var(--color-accent);
-    color: var(--color-primary);
-    padding: 0.3rem 0.6rem;
-    border-radius: 3px;
-    margin-left: 0.5rem;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    vertical-align: super;
-}
 
 .hero p {
     font-size: 1.4rem;
