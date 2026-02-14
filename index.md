@@ -9,6 +9,10 @@ title: Home
     <p>Tuesday nights · 6 PM · The Brick · Dover, NH</p>
 </div>
 
+<div class="hero-image">
+    <img src="{{ '/assets/images/dpr-group-photo.jpg' | relative_url }}" alt="Dover Run Club group photo">
+</div>
+
 <div class="cards">
     <div class="card">
         <h3>🏃 When & Where</h3>
