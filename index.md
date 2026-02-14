@@ -11,7 +11,7 @@ title: Home
 <div class="cards">
     <div class="card">
         <h3>🏃 When & Where</h3>
-        <p>Every Tuesday at 6 PM we meet at <strong>The Brick</strong> in downtown Dover, NH. Show up, say hi, and run.</p>
+        <p>Every Tuesday at 6 PM we meet at <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> in downtown Dover, NH. Show up, say hi, and run.</p>
     </div>
     
     <div class="card">
