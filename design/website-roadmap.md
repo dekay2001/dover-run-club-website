@@ -19,6 +19,7 @@ The site is a **single-page website** focused on the essentials:
 - Hosted on GitHub Pages
 
 ### What's Hidden (pages exist but are not linked)
+- `our-story.md` — Dover running community history & SIX03 roots (linked from homepage only)
 - `events.md` — Generic event/race calendar (placeholder content)
 - `pub-runs.md` — Pub run details page (placeholder content)
 - `membership.md` — Membership tiers & sign-up (placeholder content)
@@ -55,6 +56,14 @@ These are things we may want to add down the road. Nothing here is committed —
 - Strava link is already implemented in the footer
 - Future: Add links to Facebook and/or Instagram pages if/when those are created
 - Could use simple icon links (no heavy icon library needed)
+
+#### 📖 Our Story Page
+- **Status: Implemented (hidden from nav)**
+- Standalone page honors SIX03 roots and Dover running community history
+- Currently linked from homepage "Our Roots" section
+- Page accessible at `/our-story.html` but not in main navigation
+- Ready to add to nav when moving beyond Phase 1 single-page approach
+- See `design/homage.md` for source content and alternative versions
 
 ### Medium-Term (if there's demand)
 

@@ -61,3 +61,16 @@ title: Home
     <h3>Photos</h3>
     <p><em>Photos coming soon! We'll be sharing shots from our Tuesday runs.</em></p>
 </div>
+
+<div class="page">
+    <h2>Our Roots</h2>
+    <p>
+        Dover's running community has deep history, and many of us first found each other through the energy and camaraderie that SIX03 brought to the Seacoast. Those weekly pub runs, group races, and shared miles helped shape the culture we still enjoy today.
+    </p>
+    <p>
+        {{ site.title }} continues that spirit—welcoming runners of all paces, celebrating community, and keeping <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> as our home base. We're proud of where we came from, and excited for where we're going together.
+    </p>
+    <p>
+        <a href="{{ '/our-story.html' | relative_url }}" class="read-more">Read Our Full Story →</a>
+    </p>
+</div>
