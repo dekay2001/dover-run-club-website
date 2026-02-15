@@ -5,7 +5,7 @@ title: Home
 
 <div class="hero">
     <h1>Dover Run Club</h1>
-    <p class="hero-tagline">"We run and then we pub, in that order" - anonomous</p>
+    <p class="hero-tagline">"We run and then we pub, in that order" - Anonymous</p>
     <p>Tuesday nights · 6 PM · The Brick · Dover, NH</p>
 </div>
 
