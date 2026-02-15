@@ -71,6 +71,6 @@ title: Home
         {{ site.title }} continues that spirit—welcoming runners of all paces, celebrating community, and keeping <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> as our home base. We're proud of where we came from, and excited for where we're going together.
     </p>
     <p>
-        <a href="{{ '/our-story.html' | relative_url }}" class="read-more">Read Our Full Story →</a>
+        <a href="{{ '/our-story.html' | relative_url }}">Read Our Full Story →</a>
     </p>
 </div>
