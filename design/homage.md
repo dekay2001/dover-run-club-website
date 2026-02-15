@@ -1,6 +1,6 @@
 # Homage to Our Roots: Content Planning
 
-**Purpose:** This document contains draft write-ups for honoring Dover Run Club's connection to SIX03 and the running community history. The goal is to acknowledge our roots while staying warm, neutral, and community-focused—avoiding any politics or awkwardness related to organizational changes.
+**Purpose:** This document contains draft write-ups for honoring Dover Run Club's connection to SIX03 Endurance and the running community history. The goal is to acknowledge our roots while staying warm, neutral, and community-focused—avoiding any politics or awkwardness related to organizational changes.
 
 **Use Cases:**
 - Short version for homepage "Our Roots" section (with link to full story)
@@ -13,7 +13,7 @@
 
 **Our Roots**
 
-Dover's running community has deep history, and many of us first found each other through the energy and camaraderie that SIX03 brought to the Seacoast. Those weekly pub runs, group races, and shared miles helped shape the culture we still enjoy today.
+Dover's running community has deep history, and many of us first found each other through the energy and camaraderie that SIX03 Endurance brought to the Seacoast. Those weekly pub runs, group races, and shared miles helped shape the culture we still enjoy today.
 
 Dover Run Club continues that spirit—welcoming runners of all paces, celebrating community, and keeping The Brick as our home base. We're proud of where we came from, and excited for where we're going together.
 
@@ -23,7 +23,7 @@ Dover Run Club continues that spirit—welcoming runners of all paces, celebrati
 
 **Our Story: Honoring Our Past, Running Toward Our Future**
 
-Dover has always had a strong running heartbeat, and for many years SIX03 played a meaningful role in bringing people together across the Seacoast. Pub runs, group races, holiday gatherings, and countless shared miles helped create a community that felt welcoming, energetic, and fun. Many of our current members—and our home at The Brick—grew out of that era.
+Dover has always had a strong running heartbeat, and for many years SIX03 Endurance played a meaningful role in bringing people together across the Seacoast. Pub runs, group races, holiday gatherings, and countless shared miles helped create a community that felt welcoming, energetic, and fun. Many of our current members—and our home at The Brick—grew out of that era.
 
 Like many things, the pandemic changed the rhythm of group running. Traditions shifted, routines faded, and the community evolved. But the spirit that made those early days special never disappeared. It simply needed a place to grow again.
 

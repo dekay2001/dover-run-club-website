@@ -65,7 +65,7 @@ title: Home
 <div class="page">
     <h2>Our Roots</h2>
     <p>
-        Dover's running community has deep history, and many of us first found each other through the energy and camaraderie that SIX03 brought to the Seacoast. Those weekly pub runs, group races, and shared miles helped shape the culture we still enjoy today.
+        Dover's running community has deep history, and many of us first found each other through the energy and camaraderie that <strong><a href="https://six03endurance.com/" target="_blank" rel="noopener">SIX03 Endurance</a></strong> brought to the Seacoast. Those weekly pub runs, group races, and shared miles helped shape the culture we still enjoy today.
     </p>
     <p>
         {{ site.title }} continues that spirit—welcoming runners of all paces, celebrating community, and keeping <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> as our home base. We're proud of where we came from, and excited for where we're going together.
