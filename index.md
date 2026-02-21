@@ -10,7 +10,15 @@ title: Home
 </div>
 
 <div class="hero-image">
-    <img src="{{ '/assets/images/dpr-group-photo.jpg' | relative_url }}" alt="Dover Run Club group photo">
+    <img 
+        srcset="{{ '/assets/images/dpr-group-photo-400.jpg' | relative_url }} 400w,
+                {{ '/assets/images/dpr-group-photo-800.jpg' | relative_url }} 800w,
+                {{ '/assets/images/dpr-group-photo-1200.jpg' | relative_url }} 1200w"
+        sizes="(max-width: 600px) 400px,
+               (max-width: 1000px) 800px,
+               1200px"
+        src="{{ '/assets/images/dpr-group-photo-1200.jpg' | relative_url }}" 
+        alt="Dover Run Club group photo">
 </div>
 
 <div class="cards">

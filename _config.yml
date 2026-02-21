@@ -9,6 +9,16 @@ url: "https://dekay2001.github.io" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# SEO Settings
+logo: /assets/images/dpr-group-photo.jpg
+social:
+  name: Dover Run Club
+  links:
+    - https://www.strava.com/clubs/1768701
 
 # Exclude from processing
 exclude:
