@@ -10,7 +10,14 @@ title: Home
 </div>
 
 <div class="hero-image">
-    <img src="{{ '/assets/images/dpr-group-photo.jpg' | relative_url }}" alt="Dover Run Club group photo">
+    <img 
+        srcset="{{ '/assets/images/dpr-group-photo-400.jpg' | relative_url }} 400w,
+                {{ '/assets/images/dpr-group-photo-800.jpg' | relative_url }} 800w,
+                {{ '/assets/images/dpr-group-photo-1200.jpg' | relative_url }} 1200w"
+        sizes="(max-width: 900px) 100vw,
+               900px"
+        src="{{ '/assets/images/dpr-group-photo-1200.jpg' | relative_url }}" 
+        alt="Dover Run Club group photo">
 </div>
 
 <div class="cards">
@@ -21,7 +28,7 @@ title: Home
     
     <div class="card">
         <h3>🗺️ Variety of Routes</h3>
-        <p>We mix it up each week with different routes around Dover. Favorites include the <strong><a href="https://www.doverraceseries.org/" target="_blank" rel="noopener">Dover Red 5-miler</a></strong>, Mount Vernon, Washington, and parts of the community trail. Road routes with hills and flats.</p>
+        <p>We mix it up each week with different routes around Dover. Favorites include the <strong><a href="https://www.doverraceseries.org/" target="_blank" rel="noopener">Dover Red's 5-miler</a></strong>, Mount Vernon, Washington, and parts of the community trail. Road routes with hills and flats.</p>
     </div>
     
     <div class="card">

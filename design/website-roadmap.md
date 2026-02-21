@@ -15,11 +15,11 @@ The site is a **single-page website** focused on the essentials:
 
 ### What's Live
 - Homepage with club info, schedule, and About section
+- `our-story.md` — Dover running community history & SIX03 roots (linked from homepage "Our Roots" section, but not in main navigation)
 - Custom CSS with responsive design
 - Hosted on GitHub Pages
 
 ### What's Hidden (pages exist but are not linked)
-- `our-story.md` — Dover running community history & SIX03 roots (linked from homepage only)
 - `events.md` — Generic event/race calendar (placeholder content)
 - `pub-runs.md` — Pub run details page (placeholder content)
 - `membership.md` — Membership tiers & sign-up (placeholder content)
@@ -48,7 +48,8 @@ These are things we may want to add down the road. Nothing here is committed —
 ### Near-Term (when ready)
 
 #### 📸 Photos
-- Add a photo gallery or photo section to the homepage
+- **Status: Hero image added** (`dpr-group-photo.jpg` on homepage)
+- Add a full photo gallery or photo section to the homepage
 - Could be a grid of images from Tuesday runs
 - Consider hosting images in `/assets/images/` or linking from an external service
 
@@ -58,7 +59,7 @@ These are things we may want to add down the road. Nothing here is committed —
 - Could use simple icon links (no heavy icon library needed)
 
 #### 📖 Our Story Page
-- **Status: Implemented (hidden from nav)**
+- **Status: Live (linked from homepage, hidden from nav)**
 - Standalone page honors SIX03 roots and Dover running community history
 - Currently linked from homepage "Our Roots" section
 - Page accessible at `/our-story.html` but not in main navigation

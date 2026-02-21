@@ -228,6 +228,7 @@ main {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
@@ -352,6 +353,24 @@ main {
     text-shadow: 0 0 8px var(--color-glow);
 }
 
+/* Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--color-accent);
+    color: var(--color-text-light);
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-content {
@@ -376,6 +395,11 @@ main {
     
     .hero p {
         font-size: 1.1rem;
+    }
+    
+    .hero-image {
+        margin: var(--spacing-md) auto;
+        border-width: 1px;
     }
     
     .cards {
