@@ -24,7 +24,7 @@ bundle exec jekyll serve --livereload
 
 ## Design & Content Guidelines
 - **Tone:** Casual, welcoming, and inclusive of all paces. The unofficial motto is "We run and then we pub, in that order."
-- **Variables:** Always use `{{ site.title }}` instead of hardcoding the club name in content files.
+- **Variables:** Prefer using `{{ site.title }}` instead of hardcoding the club name in new or updated content files. Existing hardcoded instances may be refactored over time as the site evolves.
 - **CSS:** Use the CSS variables defined in the `:root` selector within `assets/css/main.css` for colors, fonts, and spacing. Do not introduce new hardcoded colors unless adding them to the `:root` variables.
 - **Hidden Pages:** Pages like `events.md`, `pub-runs.md`, `membership.md`, and `sponsors.md` exist in the repository as placeholders. They should remain unlinked in the main navigation until the club is ready to expand beyond the single-page format.
 
