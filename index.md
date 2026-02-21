@@ -21,7 +21,7 @@ title: Home
     
     <div class="card">
         <h3>🗺️ Variety of Routes</h3>
-        <p>We mix it up each week with different routes around Dover. Favorites include the <strong><a href="https://www.doverraceseries.org/" target="_blank" rel="noopener">Dover Red 5-miler</a></strong>, Mount Vernon, Washington, and parts of the community trail. Road routes with hills and flats.</p>
+        <p>We mix it up each week with different routes around Dover. Favorites include the <strong><a href="https://www.doverraceseries.org/" target="_blank" rel="noopener">Dover Red's 5-miler</a></strong>, Mount Vernon, Washington, and parts of the community trail. Road routes with hills and flats.</p>
     </div>
     
     <div class="card">
