@@ -3,6 +3,7 @@ title: Dover Run Club
 description: >-
   Tuesday nights at 6pm from The Brick in Dover, NH.
   A community of runners exploring a variety of routes — all paces welcome!
+contact_email: "doverrunclub@gmail.com"
 baseurl: "/dover-run-club-website" # the subpath of your site, e.g. /blog
 url: "https://dekay2001.github.io" # the base hostname & protocol for your site
 
@@ -18,6 +19,7 @@ logo: /assets/images/run-club-group-photo.jpg
 social:
   name: Dover Run Club
   links:
+    - https://www.facebook.com/groups/doverrunclub
     - https://www.strava.com/clubs/1768701
 
 # Exclude from processing
