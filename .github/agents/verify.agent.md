@@ -69,7 +69,7 @@ Get-NetTCPConnection -State Listen -LocalPort 4000 -ErrorAction SilentlyContinue
 
 Check that the homepage returns HTTP 200 and has the correct title:
 ```powershell
-Invoke-WebRequest -Uri "http://localhost:4000/" -UseBasicParsing | Select-Object StatusCode, @{N='Title';E={if ($_.Content -match '<title>(.*?)</title>') { $Matches[1] }}}
+Invoke-WebRequest -Uri "http://localhost:4000/" | Select-Object StatusCode, @{N='Title';E={if ($_.Content -match '<title>(.*?)</title>') { $Matches[1] }}}
 ```
 
 Expected: `StatusCode 200`, `Title` contains `Dover Run Club`.
