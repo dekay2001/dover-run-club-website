@@ -1,5 +1,5 @@
 ---
-description: Create detailed, sequence-aware implementation plans for this repository.
+description: [dover-run-club-website] Planning agent for sequence-aware implementation plans.
 tools: ['search', 'usages', 'problems', 'fetch', 'todos', 'runSubagent']
 handoffs:
   - label: Start Implementation
@@ -8,7 +8,7 @@ handoffs:
     send: true
 ---
 
-# Planning Agent
+# Planning Agent — dover-run-club-website
 
 You are a planning specialist for the Dover Run Club website.
 

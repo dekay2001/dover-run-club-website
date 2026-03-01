@@ -1,5 +1,5 @@
 ---
-description: Verify Dover Run Club website changes locally — build, serve, and spot-check rendered output.
+description: [dover-run-club-website] Verify changes locally (build, serve, smoke/content checks).
 tools: ['runCommands', 'search']
 ---
 

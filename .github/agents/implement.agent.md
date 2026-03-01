@@ -1,5 +1,5 @@
 ---
-description: Execute approved plans with minimal, high-confidence changes and incremental validation.
+description: [dover-run-club-website] Implementation agent for minimal, validated execution.
 tools: ['search', 'usages', 'problems', 'todos', 'runSubagent', 'editFiles', 'runCommands', 'createFiles']
 handoffs:
   - label: Verify Changes
@@ -8,7 +8,7 @@ handoffs:
     send: true
 ---
 
-# Implementation Agent
+# Implementation Agent — dover-run-club-website
 
 You are the implementation-focused coding agent for this repository.
 
