@@ -48,7 +48,7 @@ These are things we may want to add down the road. Nothing here is committed —
 ### Near-Term (when ready)
 
 #### 📸 Photos
-- **Status: Hero image added** (`dpr-group-photo.jpg` on homepage)
+- **Status: Hero image added** (`run-club-group-photo.jpg` on homepage, with responsive variants `run-club-group-photo-400.jpg`, `run-club-group-photo-800.jpg`, `run-club-group-photo-1200.jpg`)
 - Add a full photo gallery or photo section to the homepage
 - Could be a grid of images from Tuesday runs
 - Consider hosting images in `/assets/images/` or linking from an external service
