@@ -68,8 +68,8 @@ title: Home
     <p><strong>Safety note:</strong> Contact channels are not monitored for emergencies. If someone is in immediate danger, call 911.</p>
     <ul>
         <li><strong>Email:</strong> <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></li>
-        <li><strong>Facebook Group:</strong> <a href="https://www.facebook.com/groups/doverrunclub" target="_blank" rel="noopener">Join the Dover Run Club group</a></li>
-        <li><strong>Response expectations:</strong> Messages are checked by volunteers and answered as available.</li>
+        <li><strong>Facebook Group:</strong> <a href="https://www.facebook.com/groups/doverrunclub" target="_blank" rel="noopener">Join the {{ site.title }} group</a></li>
+        <li><strong>Response expectations:</strong> Messages are checked by volunteers; we aim to respond within 48 hours.</li>
     </ul>
 
     <!-- TODO: Add a photo gallery section here -->
