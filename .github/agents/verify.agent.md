@@ -15,9 +15,9 @@ A `_config_dev.yml` file must exist at the repo root with:
 baseurl: ""
 ```
 This file is `.gitignore`d and overrides the GitHub Pages `baseurl` for local preview.
-If it is missing, create it:
+If it is missing, create it (from the repo root):
 ```powershell
-Set-Content -Path "c:\Dev\dover-run-club-website\_config_dev.yml" -Value 'baseurl: ""'
+Set-Content -Path ".\\_config_dev.yml" -Value 'baseurl: ""'
 ```
 
 ## Verification Workflow
@@ -35,7 +35,6 @@ Run a clean build and confirm no Jekyll errors.
 > Note: Ruby `fiddle` deprecation warnings are pre-existing noise — ignore them.
 
 ```powershell
-cd c:\Dev\dover-run-club-website
 bundle exec jekyll build 2>&1
 ```
 
@@ -45,7 +44,7 @@ A successful build ends with `done in X.XXX seconds.`
 ### Step 3 — Grep built output for stale references
 
 ```powershell
-Get-ChildItem -Path "c:\Dev\dover-run-club-website\_site" -Recurse -Filter "*.html" |
+Get-ChildItem -Path ".\\_site" -Recurse -Filter "*.html" |
   Select-String -Pattern "dpr-|Dover Pub Run" |
   Select-Object Filename, LineNumber, Line
 ```
@@ -55,7 +54,6 @@ Report any matches as failures. Zero matches = pass.
 ### Step 4 — Start dev server (background)
 
 ```powershell
-cd c:\Dev\dover-run-club-website
 bundle exec jekyll serve --config _config.yml,_config_dev.yml
 ```
 
