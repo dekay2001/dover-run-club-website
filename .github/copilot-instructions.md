@@ -10,9 +10,21 @@ The Dover Run Club website is a Jekyll-based GitHub Pages site. It is currently 
 - **Styling:** Custom CSS (no heavy frameworks like Bootstrap or Tailwind)
 
 ## Essential Commands
-To run the site locally for development:
-```bash
-bundle exec jekyll serve --livereload
+
+Local preview requires `_config_dev.yml` at the repo root (`.gitignore`d) with `baseurl: ""`. If it doesn't exist, create it:
+```powershell
+Set-Content -Path "c:\Dev\dover-run-club-website\_config_dev.yml" -Value 'baseurl: ""'
+```
+
+Then serve:
+```powershell
+bundle exec jekyll serve --config _config.yml,_config_dev.yml
+```
+Open **http://localhost:4000/**
+
+For a build-only check (no server):
+```powershell
+bundle exec jekyll build
 ```
 
 ## File Structure
@@ -27,6 +39,10 @@ bundle exec jekyll serve --livereload
 - **Variables:** Prefer using `{{ site.title }}` instead of hardcoding the club name in new or updated content files. Existing hardcoded instances may be refactored over time as the site evolves.
 - **CSS:** Use the CSS variables defined in the `:root` selector within `assets/css/main.css` for colors, fonts, and spacing. Do not introduce new hardcoded colors unless adding them to the `:root` variables.
 - **Hidden Pages:** Pages like `events.md`, `pub-runs.md`, `membership.md`, and `sponsors.md` exist in the repository as placeholders. They should remain unlinked in the main navigation until the club is ready to expand beyond the single-page format.
+
+## Agents
+
+- [verify.agent.md](agents/verify.agent.md) — build, HTTP smoke tests, stale-ref checks, and content spot-checks for local validation
 
 ## Workflow
 - **Roadmap Updates:** Whenever structural changes are made, new features are implemented, or the status of a page changes, update `design/website-roadmap.md` to reflect the current state of the site.
