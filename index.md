@@ -65,11 +65,11 @@ title: Home
     </ul>
 
     <h3>Stay in Touch</h3>
+    <p><strong>Safety note:</strong> Contact channels are not monitored for emergencies. If someone is in immediate danger, call 911.</p>
     <ul>
         <li><strong>Email:</strong> <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></li>
         <li><strong>Facebook Group:</strong> <a href="https://www.facebook.com/groups/doverrunclub" target="_blank" rel="noopener">Join the Dover Run Club group</a></li>
         <li><strong>Response expectations:</strong> Messages are checked by volunteers and answered as available.</li>
-        <li><strong>Safety note:</strong> Contact channels are not monitored for emergencies. If someone is in immediate danger, call 911.</li>
     </ul>
 
     <!-- TODO: Add a photo gallery section here -->
@@ -89,3 +89,4 @@ title: Home
         <a href="{{ '/our-story.html' | relative_url }}">Read Our Full Story →</a>
     </p>
 </div>
+
