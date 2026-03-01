@@ -15,7 +15,7 @@ A `_config_dev.yml` file must exist at the repo root with:
 baseurl: ""
 ```
 This file is `.gitignore`d and overrides the GitHub Pages `baseurl` for local preview.
-If it is missing, create it:
+If it is missing, create it (from the repo root):
 ```powershell
 Set-Content -Path ".\_config_dev.yml" -Value 'baseurl: ""'
 ```
