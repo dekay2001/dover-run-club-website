@@ -1,5 +1,13 @@
 # GitHub Copilot Instructions for Dover Run Club Website
 
+Use these files as primary context for all non-trivial work:
+
+- [Product goals and scope](../PRODUCT.md)
+- [Architecture and boundaries](../ARCHITECTURE.md)
+- [Contribution and workflow rules](../CONTRIBUTING.md)
+- [Planning template](../plan-template.md)
+- [Roadmap and canonical idea backlog](../design/website-roadmap.md)
+
 ## Project Overview
 The Dover Run Club website is a Jekyll-based GitHub Pages site. It is currently in a **Phase 1 single-page state**, focusing on the essentials (What, When, Where, Vibe). Additional pages exist in the repository for future expansion but are intentionally hidden from the main navigation.
 
@@ -10,9 +18,21 @@ The Dover Run Club website is a Jekyll-based GitHub Pages site. It is currently 
 - **Styling:** Custom CSS (no heavy frameworks like Bootstrap or Tailwind)
 
 ## Essential Commands
-To run the site locally for development:
-```bash
-bundle exec jekyll serve --livereload
+
+Local preview requires `_config_dev.yml` at the repo root (`.gitignore`d) with `baseurl: ""`. If it doesn't exist, create it (from the repo root):
+```powershell
+Set-Content -Path ".\_config_dev.yml" -Value 'baseurl: ""'
+```
+
+Then serve:
+```powershell
+bundle exec jekyll serve --config _config.yml,_config_dev.yml
+```
+Open **http://localhost:4000/**
+
+For a build-only check (no server):
+```powershell
+bundle exec jekyll build
 ```
 
 ## File Structure
@@ -28,5 +48,30 @@ bundle exec jekyll serve --livereload
 - **CSS:** Use the CSS variables defined in the `:root` selector within `assets/css/main.css` for colors, fonts, and spacing. Do not introduce new hardcoded colors unless adding them to the `:root` variables.
 - **Hidden Pages:** Pages like `events.md`, `pub-runs.md`, `membership.md`, and `sponsors.md` exist in the repository as placeholders. They should remain unlinked in the main navigation until the club is ready to expand beyond the single-page format.
 
+## Agents
+
+- [idea.agent.md](agents/idea.agent.md) — brainstorms and prioritizes enhancement ideas, and outputs roadmap-ready TODO entries
+- [plan.agent.md](agents/plan.agent.md) — creates sequence-aware implementation plans using `plan-template.md`
+- [implement.agent.md](agents/implement.agent.md) — executes approved plans with clean code + SOLID focus and incremental validation
+- [verify.agent.md](agents/verify.agent.md) — build, HTTP smoke tests, stale-ref checks, and content spot-checks for local validation
+
+## Prompts
+
+- [idea-capture.prompt.md](prompts/idea-capture.prompt.md) — structured idea capture and prioritization
+- [plan-qna.prompt.md](prompts/plan-qna.prompt.md) — clarifying questions followed by full plan generation
+- [implement-from-plan.prompt.md](prompts/implement-from-plan.prompt.md) — implementation of approved plan with stepwise validation
+
+## Quick Start Flow
+
+Use this sequence in Chat for non-trivial enhancements:
+
+1. `/idea-capture` and describe the desired improvement.
+2. Add approved idea(s) to `design/website-roadmap.md` using the Canonical Idea Backlog format.
+3. `/plan-qna` referencing the selected roadmap item.
+4. `/implement-from-plan` with the approved plan.
+5. Hand off to `verify` for build/smoke/content checks.
+
 ## Workflow
-- **Roadmap Updates:** Whenever structural changes are made, new features are implemented, or the status of a page changes, update `design/website-roadmap.md` to reflect the current state of the site.
+- **Canonical Backlog:** `design/website-roadmap.md` is the source-of-truth for enhancement ideas and TODO status.
+- **Flow:** Idea → Plan → Implement → Verify.
+- **Roadmap Updates:** Whenever structural changes are made, new features are implemented, or page status changes, update `design/website-roadmap.md` in the same change.
