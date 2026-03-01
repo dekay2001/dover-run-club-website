@@ -1,5 +1,13 @@
 # GitHub Copilot Instructions for Dover Run Club Website
 
+Use these files as primary context for all non-trivial work:
+
+- [Product goals and scope](../PRODUCT.md)
+- [Architecture and boundaries](../ARCHITECTURE.md)
+- [Contribution and workflow rules](../CONTRIBUTING.md)
+- [Planning template](../plan-template.md)
+- [Roadmap and canonical idea backlog](../design/website-roadmap.md)
+
 ## Project Overview
 The Dover Run Club website is a Jekyll-based GitHub Pages site. It is currently in a **Phase 1 single-page state**, focusing on the essentials (What, When, Where, Vibe). Additional pages exist in the repository for future expansion but are intentionally hidden from the main navigation.
 
@@ -42,7 +50,28 @@ bundle exec jekyll build
 
 ## Agents
 
+- [idea.agent.md](agents/idea.agent.md) — brainstorms and prioritizes enhancement ideas, and outputs roadmap-ready TODO entries
+- [plan.agent.md](agents/plan.agent.md) — creates sequence-aware implementation plans using `plan-template.md`
+- [implement.agent.md](agents/implement.agent.md) — executes approved plans with clean code + SOLID focus and incremental validation
 - [verify.agent.md](agents/verify.agent.md) — build, HTTP smoke tests, stale-ref checks, and content spot-checks for local validation
 
+## Prompts
+
+- [idea-capture.prompt.md](prompts/idea-capture.prompt.md) — structured idea capture and prioritization
+- [plan-qna.prompt.md](prompts/plan-qna.prompt.md) — clarifying questions followed by full plan generation
+- [implement-from-plan.prompt.md](prompts/implement-from-plan.prompt.md) — implementation of approved plan with stepwise validation
+
+## Quick Start Flow
+
+Use this sequence in Chat for non-trivial enhancements:
+
+1. `/idea-capture` and describe the desired improvement.
+2. Add approved idea(s) to `design/website-roadmap.md` using the Canonical Idea Backlog format.
+3. `/plan-qna` referencing the selected roadmap item.
+4. `/implement-from-plan` with the approved plan.
+5. Hand off to `verify` for build/smoke/content checks.
+
 ## Workflow
-- **Roadmap Updates:** Whenever structural changes are made, new features are implemented, or the status of a page changes, update `design/website-roadmap.md` to reflect the current state of the site.
+- **Canonical Backlog:** `design/website-roadmap.md` is the source-of-truth for enhancement ideas and TODO status.
+- **Flow:** Idea → Plan → Implement → Verify.
+- **Roadmap Updates:** Whenever structural changes are made, new features are implemented, or page status changes, update `design/website-roadmap.md` in the same change.

@@ -1,4 +1,3 @@
-```chatagent
 ---
 description: Verify Dover Run Club website changes locally — build, serve, and spot-check rendered output.
 tools: ['runCommands', 'search']
@@ -109,4 +108,3 @@ The verify agent can then run:
 npx playwright test
 ```
 after Step 5. Keep the HTTP smoke tests — they are fast and dependency-free.
-```
