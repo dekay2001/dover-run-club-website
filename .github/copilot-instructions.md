@@ -1,7 +1,7 @@
 # GitHub Copilot Instructions for Dover Run Club Website
 
 ## Project Overview
-The Dover Run Club (DPR) website is a Jekyll-based GitHub Pages site. It is currently in a **Phase 1 single-page state**, focusing on the essentials (What, When, Where, Vibe). Additional pages exist in the repository for future expansion but are intentionally hidden from the main navigation.
+The Dover Run Club website is a Jekyll-based GitHub Pages site. It is currently in a **Phase 1 single-page state**, focusing on the essentials (What, When, Where, Vibe). Additional pages exist in the repository for future expansion but are intentionally hidden from the main navigation.
 
 ## Tech Stack
 - **Framework:** Jekyll (hosted on GitHub Pages)

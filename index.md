@@ -11,12 +11,12 @@ title: Home
 
 <div class="hero-image">
     <img 
-        srcset="{{ '/assets/images/dpr-group-photo-400.jpg' | relative_url }} 400w,
-                {{ '/assets/images/dpr-group-photo-800.jpg' | relative_url }} 800w,
-                {{ '/assets/images/dpr-group-photo-1200.jpg' | relative_url }} 1200w"
+        srcset="{{ '/assets/images/run-club-group-photo-400.jpg' | relative_url }} 400w,
+                {{ '/assets/images/run-club-group-photo-800.jpg' | relative_url }} 800w,
+                {{ '/assets/images/run-club-group-photo-1200.jpg' | relative_url }} 1200w"
         sizes="(max-width: 900px) 100vw,
                900px"
-        src="{{ '/assets/images/dpr-group-photo-1200.jpg' | relative_url }}" 
+        src="{{ '/assets/images/run-club-group-photo-1200.jpg' | relative_url }}" 
         alt="Dover Run Club group photo">
 </div>
 
