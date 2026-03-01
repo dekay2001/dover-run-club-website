@@ -19,9 +19,9 @@ The Dover Run Club website is a Jekyll-based GitHub Pages site. It is currently 
 
 ## Essential Commands
 
-Local preview requires `_config_dev.yml` at the repo root (`.gitignore`d) with `baseurl: ""`. If it doesn't exist, create it:
+Local preview requires `_config_dev.yml` at the repo root (`.gitignore`d) with `baseurl: ""`. If it doesn't exist, create it (from the repo root):
 ```powershell
-Set-Content -Path "c:\Dev\dover-run-club-website\_config_dev.yml" -Value 'baseurl: ""'
+Set-Content -Path ".\_config_dev.yml" -Value 'baseurl: ""'
 ```
 
 Then serve:

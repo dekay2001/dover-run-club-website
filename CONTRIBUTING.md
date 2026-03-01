@@ -29,7 +29,7 @@ Canonical backlog for idea capture and TODOs: `design/website-roadmap.md`.
 ## Verification Commands
 If missing, create local dev config:
 ```powershell
-Set-Content -Path "c:\Dev\dover-run-club-website\_config_dev.yml" -Value 'baseurl: ""'
+Set-Content -Path "_config_dev.yml" -Value 'baseurl: ""'
 ```
 
 Build check:
@@ -44,7 +44,7 @@ bundle exec jekyll serve --config _config.yml,_config_dev.yml
 
 Smoke check:
 ```powershell
-Invoke-WebRequest -Uri "http://localhost:4000/" -UseBasicParsing | Select-Object StatusCode
+Invoke-WebRequest -Uri "http://localhost:4000/" | Select-Object StatusCode
 ```
 
 ## When to Update `design/website-roadmap.md`

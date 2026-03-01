@@ -45,7 +45,9 @@ A successful build ends with `done in X.XXX seconds.`
 ### Step 3 — Grep built output for stale references
 
 ```powershell
-Select-String -Path "c:\Dev\dover-run-club-website\_site\*.html" -Pattern "dpr-|Dover Pub Run" | Select-Object Filename, LineNumber, Line
+Get-ChildItem -Path "c:\Dev\dover-run-club-website\_site" -Recurse -Filter "*.html" |
+  Select-String -Pattern "dpr-|Dover Pub Run" |
+  Select-Object Filename, LineNumber, Line
 ```
 
 Report any matches as failures. Zero matches = pass.

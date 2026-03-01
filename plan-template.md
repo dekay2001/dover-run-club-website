@@ -1,11 +1,3 @@
----
-title: "<short implementation title>"
-version: "<optional>"
-date_created: "<YYYY-MM-DD>"
-last_updated: "<YYYY-MM-DD>"
-owner: "<owner or team>"
-status: "draft"
----
 
 > Note: `status` must be one of: `draft`, `in-review`, `approved`, `in-progress`, `done`.
 
