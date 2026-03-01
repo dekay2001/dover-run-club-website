@@ -64,6 +64,14 @@ title: Home
         <li><strong>Year-round:</strong> We run every Tuesday, all year long</li>
     </ul>
 
+    <h3>Stay in Touch</h3>
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></li>
+        <li><strong>Facebook Group:</strong> <a href="https://www.facebook.com/groups/doverrunclub" target="_blank" rel="noopener">Join the Dover Run Club group</a></li>
+        <li><strong>Response expectations:</strong> Messages are checked by volunteers; expect replies within 48 hours.</li>
+        <li><strong>Safety note:</strong> Contact channels are not monitored for emergencies. If someone is in immediate danger, call 911.</li>
+    </ul>
+
     <!-- TODO: Add a photo gallery section here -->
     <h3>Photos</h3>
     <p><em>Photos coming soon! We'll be sharing shots from our Tuesday runs.</em></p>
