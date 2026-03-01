@@ -80,4 +80,16 @@ title: Home
     <p>
         <a href="{{ '/our-story.html' | relative_url }}">Read Our Full Story →</a>
     </p>
+
+    <h3>Using AI Tools Safely (Optional)</h3>
+    <p>
+        Some runners use AI apps for training ideas, route planning, or race prep. If that helps you, awesome — just keep it practical and safe.
+    </p>
+    <ul>
+        <li><strong>Stay transparent:</strong> If a plan came from AI, treat it like a draft and adjust for your real life.</li>
+        <li><strong>Protect privacy:</strong> Don't share personal health details, private contact info, or anything sensitive.</li>
+        <li><strong>Verify advice:</strong> Double-check training and safety guidance with trusted sources and experienced runners.</li>
+        <li><strong>Know your limits:</strong> AI doesn't know your body — listen to yourself first.</li>
+        <li><strong>Keep the human vibe:</strong> Tech can help, but community and conversation matter most.</li>
+    </ul>
 </div>
