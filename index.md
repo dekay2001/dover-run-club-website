@@ -69,6 +69,7 @@ title: Home
     <ul>
         <li><strong>Email:</strong> <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></li>
         <li><strong>Facebook Group:</strong> <a href="https://www.facebook.com/groups/doverrunclub" target="_blank" rel="noopener">Join the {{ site.title }} group</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/doverrunclubnh/" target="_blank" rel="noopener">Follow {{ site.title }} on Instagram</a></li>
         <li><strong>Response expectations:</strong> Messages are checked by volunteers; we aim to respond within 48 hours.</li>
     </ul>
 
