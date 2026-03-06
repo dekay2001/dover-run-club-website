@@ -22,6 +22,7 @@ GitHub will now build and deploy your site. This may take a few minutes.
 
 Once deployed, your site will be available at:
 - **Default URL**: https://dekay2001.github.io/dover-run-club-website/
+- **Custom domain URL (current production)**: https://www.doverrunclub.com/
 
 **Note**: Since you already have a personal site at `dekay2001.github.io`, this run club site will be at the repository path shown above.
 
@@ -106,6 +107,17 @@ GitHub Pages will automatically rebuild your site whenever you push changes to t
 - DNS propagation can take 24-48 hours
 - Ensure CNAME file contains only the domain name (no protocol or paths)
 - Check for DNS check status in Settings > Pages
+
+### `NotServedByPagesError` for apex domain (`doverrunclub.com`)?
+- This can appear even when `www.doverrunclub.com` is serving correctly.
+- It means the apex/root domain DNS is not pointing at GitHub Pages.
+- To clear the warning, configure apex DNS (`@`) to GitHub Pages A records:
+   - `185.199.108.153`
+   - `185.199.109.153`
+   - `185.199.110.153`
+   - `185.199.111.153`
+- Keep `www` as CNAME to `dekay2001.github.io`.
+- If you prefer `www` only, set your registrar to forward `doverrunclub.com` to `https://www.doverrunclub.com` and remove conflicting apex records.
 
 ### Build failures?
 - Check the Actions tab for build logs
