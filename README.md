@@ -115,6 +115,18 @@ To use a custom domain instead of `username.github.io/repository`:
    - Enter your custom domain in the "Custom domain" field
    - Enable "Enforce HTTPS" (recommended)
 
+#### DNS Quick-Check (if `www` works but GitHub shows an apex warning)
+
+If `https://www.example.com` is loading but GitHub Pages warns that `example.com` is improperly configured (`NotServedByPagesError`), the apex/root domain (`@`) is not pointed at GitHub Pages.
+
+- Keep `www` as a CNAME to `yourusername.github.io`
+- Point apex (`@`) A records to:
+   - `185.199.108.153`
+   - `185.199.109.153`
+   - `185.199.110.153`
+   - `185.199.111.153`
+- If you want `www`-only behavior, set registrar forwarding from `example.com` to `https://www.example.com`
+
 ### 3. Build Configuration
 
 The site uses the `github-pages` gem which includes:

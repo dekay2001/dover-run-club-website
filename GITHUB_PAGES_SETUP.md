@@ -22,6 +22,7 @@ GitHub will now build and deploy your site. This may take a few minutes.
 
 Once deployed, your site will be available at:
 - **Default URL**: https://dekay2001.github.io/dover-run-club-website/
+- **Custom domain URL (current production)**: https://www.doverrunclub.com/
 
 **Note**: Since you already have a personal site at `dekay2001.github.io`, this run club site will be at the repository path shown above.
 
@@ -106,6 +107,18 @@ GitHub Pages will automatically rebuild your site whenever you push changes to t
 - DNS propagation can take 24-48 hours
 - Ensure CNAME file contains only the domain name (no protocol or paths)
 - Check for DNS check status in Settings > Pages
+
+### `NotServedByPagesError` for apex domain (`doverrunclub.com`)?
+- This can appear even when `www.doverrunclub.com` is serving correctly.
+- It means the apex/root domain DNS is not pointing at GitHub Pages.
+- **First, verify your configuration**: Check that the `CNAME` file in your repo and Settings → Pages "Custom domain" field both contain the same value — either `doverrunclub.com` (apex) or `www.doverrunclub.com` (www). Apex A records are only needed if the apex domain is your configured custom domain, or if you want both apex and `www` to resolve via GitHub Pages.
+- To serve the apex domain, configure apex DNS (`@`) to GitHub Pages A records:
+   - `185.199.108.153`
+   - `185.199.109.153`
+   - `185.199.110.153`
+   - `185.199.111.153`
+- Keep `www` as CNAME to `dekay2001.github.io`.
+- If your `CNAME` file and GitHub Pages settings are already set to `www.doverrunclub.com` (www-only), adding apex A records is not required — instead, set your registrar to forward `doverrunclub.com` to `https://www.doverrunclub.com` and remove any conflicting apex records.
 
 ### Build failures?
 - Check the Actions tab for build logs

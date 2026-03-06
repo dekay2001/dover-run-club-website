@@ -5,7 +5,7 @@ description: >-
   A community of runners exploring a variety of routes — all paces welcome!
 contact_email: "doverrunclub@gmail.com"
 baseurl: "" # custom domain at root
-url: "http://www.doverrunclub.com" # production base hostname & protocol
+url: "https://www.doverrunclub.com" # production base hostname & protocol
 
 # Build settings
 markdown: kramdown
