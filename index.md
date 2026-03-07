@@ -5,7 +5,7 @@ title: Home
 
 <div class="hero">
     <h1>Dover Run Club</h1>
-    <p class="hero-tagline">"We run and then we pub, in that order" - Anonymous</p>
+    <p class="hero-tagline">Tuesday nights. All paces welcome. Meet, run, and hang after if you'd like.</p>
     <p>Tuesday nights · 6 PM · The Brick · Dover, NH</p>
 </div>
 
@@ -32,8 +32,8 @@ title: Home
     </div>
     
     <div class="card">
-        <h3>🍺 Post-Run Hangs</h3>
-        <p>The best part? We finish back at The Brick for food, drinks, and good company. Running is just the excuse to hang out.</p>
+        <h3>🤝 Optional Post-Run Hang</h3>
+        <p>We start and finish at The Brick. Many runners stick around for food, drinks, and good company, but plenty come just for the run.</p>
     </div>
     
     <div class="card">
@@ -46,21 +46,21 @@ title: Home
     <h2>About Us</h2>
     <p>
         {{ site.title }} has a long history of Tuesday night runs in Dover.
-        What started as a regular pub run has grown into a large, loyal group of runners
+        What started as a regular Tuesday meetup has grown into a large, loyal group of runners
         who show up rain or shine, summer or winter.
     </p>
     <p>
         There's no membership fee, no sign-up sheet, and no pressure. Just show up at
         <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> on Tuesdays at 6 PM and you're part of the crew. We run a variety of
-        routes around Dover and the surrounding area, and everyone ends up back at the
-        pub afterward.
+        routes around Dover and the surrounding area. Many runners hang out at The Brick afterward,
+        but plenty head home after the run—and both are part of the crew.
     </p>
     
     <h3>What to Expect</h3>
     <ul>
         <li><strong>No experience needed:</strong> Whether it's your first run or your thousandth, you're welcome</li>
         <li><strong>Multiple pace groups:</strong> You'll find people running your speed</li>
-        <li><strong>Social vibes:</strong> Half the fun is the post-run hangout at <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong></li>
+        <li><strong>Optional post-run hang:</strong> Some runners stay at <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> afterward, and some just come for the run</li>
         <li><strong>Year-round:</strong> We run every Tuesday, all year long</li>
     </ul>
 
