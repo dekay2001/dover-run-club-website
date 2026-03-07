@@ -1,5 +1,5 @@
 ---
-description: [dover-run-club-website] Planning agent for sequence-aware implementation plans.
+description: "[dover-run-club-website] Architect/planner for detailed implementation plans."
 tools: ['search', 'usages', 'problems', 'fetch', 'todos', 'runSubagent']
 handoffs:
   - label: Start Implementation
