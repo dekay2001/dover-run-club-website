@@ -83,7 +83,7 @@ title: Home
                 {{ '/assets/images/DCR_20260310-1200.jpg' | relative_url }} 1200w"
         sizes="(max-width: 800px) 100vw, 800px"
         src="{{ '/assets/images/DCR_20260310-1200.jpg' | relative_url }}" 
-        alt="Dover Run Club's first official run club photo">
+        alt="{{ site.title }}'s first official run club photo">
 </div>
 
 <div class="page">

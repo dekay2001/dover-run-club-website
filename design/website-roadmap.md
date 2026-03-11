@@ -15,7 +15,7 @@ The site is a **single-page website** focused on the essentials:
 
 ### What's Live
 - Homepage with club info, schedule, About section, and run-first/optional-hang messaging
-- First official run club photo (`DCR_20260310.jpg`) added to homepage with responsive variants
+- First official run club photo added to homepage using responsive image variants (`DCR_20260310-400.jpg`, `DCR_20260310-800.jpg`, `DCR_20260310-1200.jpg`)
 - `our-story.md` — Dover running community history & SIX03 roots (linked from homepage "Our Roots" section, but not in main navigation)
 - Contact section on homepage with dedicated email plus Facebook group, Instagram, and Strava links
 - Custom CSS with responsive design
