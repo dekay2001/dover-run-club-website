@@ -76,7 +76,14 @@ title: Home
 
     <!-- TODO: Add a photo gallery section here -->
     <h3>Photos</h3>
-    <p><em>Photos coming soon! We'll be sharing shots from our Tuesday runs.</em></p>
+    <img 
+        class="responsive-img"
+        srcset="{{ '/assets/images/DCR_20260310-400.jpg' | relative_url }} 400w,
+                {{ '/assets/images/DCR_20260310-800.jpg' | relative_url }} 800w,
+                {{ '/assets/images/DCR_20260310-1200.jpg' | relative_url }} 1200w"
+        sizes="(max-width: 800px) 100vw, 800px"
+        src="{{ '/assets/images/DCR_20260310-1200.jpg' | relative_url }}" 
+        alt="{{ site.title }}'s first official run club photo">
 </div>
 
 <div class="page">

@@ -279,6 +279,14 @@ main {
     line-height: 1.6;
 }
 
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--border-radius);
+    margin: var(--spacing-md) 0;
+}
+
 /* Page Content Sections */
 .page {
     background: rgba(26, 29, 46, 0.9);
