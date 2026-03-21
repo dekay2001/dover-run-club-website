@@ -348,7 +348,7 @@ main {
     left: 0;
     right: 0;
     background: rgba(249, 115, 22, 0.85);
-    color: #fff;
+    color: var(--color-text-light);
     text-align: center;
     padding: var(--spacing-sm);
     font-weight: bold;
@@ -359,6 +359,15 @@ main {
 }
 
 .route-image-link:hover::after {
+    transform: translateY(0);
+}
+
+.route-image-link:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+.route-image-link:focus-visible::after {
     transform: translateY(0);
 }
 
