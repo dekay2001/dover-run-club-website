@@ -87,6 +87,33 @@ title: Home
 </div>
 
 <div class="page">
+    <h2>Common Routes</h2>
+    <div class="route-cards">
+        {% for route in site.data.routes %}
+        <div class="route-card">
+            <h3 class="route-title">{{ route.title }}</h3>
+            {% if route.image %}
+                {% if route.strava_url %}
+                <a href="{{ route.strava_url }}" class="route-image-link" target="_blank" rel="noopener" title="View {{ route.title }} map on Strava">
+                    <img src="{{ route.image | relative_url }}" alt="Map for {{ route.title }}">
+                </a>
+                {% else %}
+                <img src="{{ route.image | relative_url }}" alt="Map for {{ route.title }}">
+                {% endif %}
+            {% endif %}
+            <div class="route-card-content">
+                <p>{{ route.description }}</p>
+                {% if route.strava_url and route.image == nil %}
+                <a href="{{ route.strava_url }}" class="button" target="_blank" rel="noopener">View on Strava</a>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <p class="routes-more">More soon.</p>
+</div>
+
+<div class="page">
     <h2>Our Roots</h2>
     <p>
         Dover's running community has deep history, and many of us first found each other through the energy and camaraderie that <strong><a href="https://six03endurance.com/" target="_blank" rel="noopener">SIX03 Endurance</a></strong> brought to the Seacoast. Those weekly pub runs, group races, and shared miles helped shape the culture we still enjoy today.
