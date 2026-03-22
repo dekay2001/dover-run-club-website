@@ -7,6 +7,9 @@ contact_email: "doverrunclub@gmail.com"
 baseurl: "" # custom domain at root
 url: "https://www.doverrunclub.com" # production base hostname & protocol
 
+# Third-party integrations (set to false to disable in non-production builds)
+mailchimp_enabled: true
+
 # Build settings
 markdown: kramdown
 theme: minima
