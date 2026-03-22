@@ -423,6 +423,16 @@ main {
     color: var(--color-text-muted);
     font-style: italic;
 }
+.routes-intro {
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-md);
+}
+.route-contributor {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-xs);
+    font-style: italic;
+}
 /* Page Content Sections */
 .page {
     background: rgba(26, 29, 46, 0.9);
