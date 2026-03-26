@@ -11,6 +11,10 @@
                 <a href="https://www.instagram.com/doverrunclubnh/" target="_blank" rel="noopener" aria-label="Visit our Instagram page">Instagram</a>
                 ·
                 <a href="mailto:{{ site.contact_email }}" aria-label="Email {{ site.title }}">Email Us</a>
+                {% if site.merch_url and site.merch_url != "" %}
+                ·
+                <a href="{{ site.merch_url }}" target="_blank" rel="noopener" aria-label="Shop {{ site.title }} merchandise">Shop</a>
+                {% endif %}
             </p>
         </div>
     </div>
