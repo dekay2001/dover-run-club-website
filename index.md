@@ -117,7 +117,6 @@ title: Home
         </div>
         {% endfor %}
     </div>
-    <p class="routes-more">More soon.</p>
 </div>
 
 <div class="page">
