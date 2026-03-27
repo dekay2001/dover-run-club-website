@@ -20,6 +20,8 @@ title: Home
         alt="Dover Run Club group photo">
 </div>
 
+<hr class="section-divider">
+
 <div class="cards">
     <div class="card">
         <h3>🏃 When & Where</h3>
@@ -41,6 +43,8 @@ title: Home
         <p>Fast, slow, somewhere in between — doesn't matter. We have runners of all abilities and everyone finds their group.</p>
     </div>
 </div>
+
+<hr class="section-divider">
 
 <div class="page">
     <h2>About Us</h2>
@@ -113,7 +117,6 @@ title: Home
         </div>
         {% endfor %}
     </div>
-    <p class="routes-more">More soon.</p>
 </div>
 
 <div class="page">

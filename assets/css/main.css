@@ -1,20 +1,67 @@
-/* Dover Run Club - Masculine Sunset Theme (Portugal Inspired) */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap');
+/* Dover Run Club - Navy & Teal Dark Theme */
 
-/* CSS Variables - Dark Masculine Theme */
+/* Self-hosted fonts — eliminates external network round-trip; swap keeps text readable during load */
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/assets/fonts/BebasNeue-400.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/assets/fonts/Roboto-300.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/assets/fonts/Roboto-400.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/assets/fonts/Roboto-500.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/assets/fonts/Roboto-700.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* CSS Variables - Official Logo Palette: Dark Navy + Teal + Goldenrod */
 :root {
-    --color-primary: #1a1d2e;        /* Deep navy background */
-    --color-secondary: #2d3250;      /* Slate blue-purple */
-    --color-accent: #f97316;         /* Sunset orange */
-    --color-accent-hover: #ea580c;   /* Deeper orange */
-    --color-purple: #4a4268;         /* Cloudy purple */
-    --color-blue: #2e4a6d;           /* Deep blue */
-    --color-text-light: #e5e7eb;     /* Light text */
-    --color-text-muted: #9ca3af;     /* Muted gray text */
-    --color-dark: #0f1117;           /* Almost black */
-    --color-shadow: rgba(0, 0, 0, 0.3);
-    --color-shadow-hover: rgba(0, 0, 0, 0.5);
-    --color-glow: rgba(249, 115, 22, 0.3);
+    --color-primary: #26726c;        /* Logo Light Teal — nav, headers, strong brand anchors */
+    --color-secondary: #1d5650;      /* Logo Middle Teal — buttons, interactive, secondary sections */
+    --color-accent: #DAA520;         /* Goldenrod Yellow — CTAs, hover states, badges, highlights */
+    --color-accent-hover: #C5920F;   /* Deeper goldenrod */
+    --color-background: #001d37;     /* Logo Dark Navy — main page background */
+    --color-text: #a8cab8;           /* Soft mint-gray — body text on dark bg */
+    --color-text-heading: #82c995;   /* Logo Lettering Mint — headings */
+    --color-text-on-dark: #e8f5ed;   /* Near-white mint — text on dark surfaces */
+    --color-surface: #072240;        /* Lifted navy — card/section surfaces */
+    --color-border: #1d5650;         /* Logo Middle Teal — borders */
+    --color-primary-dark: #033033;   /* Logo Darkest Teal — hero gradient depth */
+    --color-shadow: rgba(0, 0, 0, 0.30);
+    --color-shadow-hover: rgba(0, 0, 0, 0.50);
+    --color-glow: rgba(218, 165, 32, 0.40);
     
     --font-heading: 'Bebas Neue', 'Impact', sans-serif;
     --font-body: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -40,28 +87,13 @@ body {
     font-family: var(--font-body);
     font-size: 16px;
     line-height: 1.7;
-    color: var(--color-text-light);
-    background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-primary) 50%, var(--color-purple) 100%);
-    background-size: 200% 200%;
-    animation: gradientBG 20s ease infinite;
-    background-attachment: fixed;
+    color: var(--color-text);
+    background: var(--color-background);
     margin: 0;
     padding: 0;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 .container {
@@ -77,15 +109,14 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: var(--spacing-md);
-    color: var(--color-text-light);
+    color: var(--color-text-heading);
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
 
 h1 {
     font-size: 3rem;
-    color: var(--color-accent);
-    text-shadow: 0 2px 10px var(--color-glow);
+    color: var(--color-primary);
 }
 
 h2 {
@@ -96,7 +127,7 @@ h2 {
 
 h3 {
     font-size: 1.75rem;
-    color: var(--color-accent);
+    color: var(--color-primary);
 }
 
 p {
@@ -105,23 +136,23 @@ p {
 
 /* Links */
 a {
-    color: var(--color-accent);
+    color: var(--color-primary);
     text-decoration: none;
     transition: all var(--transition-speed) ease;
     font-weight: 500;
 }
 
 a:hover {
-    color: var(--color-accent-hover);
-    text-shadow: 0 0 8px var(--color-glow);
+    color: var(--color-accent);
+    text-shadow: 0 0 6px var(--color-glow);
 }
 
 /* Header Styles */
 .site-header {
-    background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-blue) 100%);
-    color: var(--color-text-light);
-    padding: var(--spacing-lg) 0;
-    box-shadow: 0 4px 12px var(--color-shadow);
+    background: var(--color-secondary);
+    color: var(--color-text-on-dark);
+    padding: var(--spacing-md) 0;
+    box-shadow: 0 2px 8px var(--color-shadow);
     border-bottom: 3px solid var(--color-accent);
 }
 
@@ -132,17 +163,29 @@ a:hover {
     flex-wrap: wrap;
 }
 
+/* Logo */
+.site-logo {
+    height: 50px;
+    width: auto;
+    border-radius: var(--border-radius);
+}
+
 .site-title {
     font-family: var(--font-heading);
     font-size: 2.5rem;
     margin: 0;
     letter-spacing: 0.1em;
-    text-shadow: 0 2px 8px var(--color-shadow);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
 }
 
 .site-title a {
-    color: var(--color-text-light);
+    color: var(--color-text-on-dark);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
 }
 
 .site-title em {
@@ -158,7 +201,7 @@ a:hover {
 }
 
 .site-nav a {
-    color: var(--color-text-light);
+    color: var(--color-text-on-dark);
     text-decoration: none;
     font-family: var(--font-heading);
     font-size: 1.1rem;
@@ -171,9 +214,8 @@ a:hover {
 }
 
 .site-nav a:hover {
-    background: rgba(249, 115, 22, 0.15);
+    background: rgba(255, 255, 255, 0.1);
     border-bottom-color: var(--color-accent);
-    text-shadow: 0 0 10px var(--color-glow);
     color: var(--color-accent);
 }
 
@@ -186,23 +228,27 @@ main {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: var(--spacing-xl) 0;
-    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-xl) var(--spacing-md);
+    margin-bottom: 0;
+    background: var(--color-background);
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, transparent, var(--color-accent), transparent) 1;
 }
 
 .hero h1 {
     font-size: 4rem;
-    color: var(--color-accent);
+    color: var(--color-text-on-dark);
     margin-bottom: var(--spacing-md);
-    text-shadow: 0 4px 20px var(--color-glow);
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 }
 
 
 .hero p {
     font-size: 1.4rem;
-    color: var(--color-text-muted);
+    color: var(--color-text-on-dark);
     margin-bottom: var(--spacing-lg);
     font-weight: 300;
+    opacity: 0.9;
 }
 
 .hero-tagline {
@@ -211,7 +257,7 @@ main {
     font-style: italic;
     font-weight: 400 !important;
     margin-bottom: var(--spacing-md) !important;
-    text-shadow: 0 2px 10px var(--color-glow);
+    text-shadow: 0 1px 8px var(--color-glow);
 }
 
 /* Hero Image */
@@ -220,7 +266,7 @@ main {
     margin: var(--spacing-xl) auto var(--spacing-lg);
     border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: 0 12px 40px var(--color-shadow-hover);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
     border: 2px solid var(--color-accent);
 }
 
@@ -234,6 +280,15 @@ main {
 
 .hero-image:hover img {
     transform: scale(1.02);
+}
+
+/* Golden Section Divider */
+.section-divider {
+    border: none;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+    margin: var(--spacing-xl) auto;
+    max-width: 600px;
 }
 
 /* Cards Grid */
@@ -251,31 +306,29 @@ main {
 }
 
 .card {
-    background: rgba(45, 50, 80, 0.95);
-    backdrop-filter: blur(10px);
+    background: var(--color-surface);
     padding: var(--spacing-lg);
     border-radius: var(--border-radius);
-    box-shadow: 0 8px 24px var(--color-shadow-hover);
-    border: 1px solid rgba(249, 115, 22, 0.3);
+    box-shadow: 0 2px 8px var(--color-shadow);
+    border: 1px solid var(--color-border);
     transition: all var(--transition-speed) ease;
     text-align: center;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 16px 40px var(--color-shadow-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px var(--color-shadow-hover), 0 0 12px var(--color-glow);
     border-color: var(--color-accent);
-    background: rgba(45, 50, 80, 1.0);
 }
 
 .card h3 {
-    color: var(--color-accent);
+    color: var(--color-primary);
     margin-bottom: var(--spacing-md);
     font-size: 1.5rem;
 }
 
 .card p {
-    color: var(--color-text-light);
+    color: var(--color-text);
     line-height: 1.6;
 }
 
@@ -308,11 +361,11 @@ main {
 }
 
 .route-card {
-    background: rgba(45, 50, 80, 0.95);
+    background: var(--color-surface);
     border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: 0 4px 12px var(--color-shadow);
-    border: 1px solid rgba(249, 115, 22, 0.2);
+    box-shadow: 0 2px 8px var(--color-shadow);
+    border: 1px solid var(--color-border);
     display: flex;
     flex-direction: column;
     transition: all var(--transition-speed) ease;
@@ -320,17 +373,17 @@ main {
 
 .route-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px var(--color-shadow-hover);
+    box-shadow: 0 8px 24px var(--color-shadow-hover), 0 0 12px var(--color-glow);
     border-color: var(--color-accent);
 }
 
 .route-title {
     margin: 0;
     padding: var(--spacing-sm) var(--spacing-md);
-    color: var(--color-text-light);
+    color: var(--color-primary);
     font-size: 1.2rem;
     text-align: center;
-    border-bottom: 2px solid var(--color-accent);
+    border-bottom: 2px solid var(--color-border);
     line-height: 1.4;
 }
 
@@ -338,7 +391,7 @@ main {
     display: block;
     position: relative;
     overflow: hidden;
-    border-bottom: 2px solid var(--color-accent);
+    border-bottom: 2px solid var(--color-border);
 }
 
 .route-image-link::after {
@@ -347,8 +400,8 @@ main {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(249, 115, 22, 0.85);
-    color: var(--color-text-light);
+    background: rgba(3, 48, 51, 0.92);
+    color: var(--color-text-on-dark);
     text-align: center;
     padding: var(--spacing-sm);
     font-weight: bold;
@@ -372,7 +425,7 @@ main {
 }
 
 .route-card > img {
-    border-bottom: 2px solid var(--color-accent);
+    border-bottom: 2px solid var(--color-border);
 }
 
 .route-card img {
@@ -390,7 +443,7 @@ main {
 
 .route-card-content p {
     font-size: 0.95rem;
-    color: var(--color-text-muted);
+    color: var(--color-text);
     line-height: 1.5;
     margin-bottom: 0;
     flex-grow: 1;
@@ -399,9 +452,9 @@ main {
 .route-card .button {
     display: inline-block;
     padding: var(--spacing-sm) var(--spacing-md);
-    background-color: transparent;
-    border: 2px solid var(--color-accent);
-    color: var(--color-accent);
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    color: var(--color-text-on-dark);
     text-align: center;
     border-radius: var(--border-radius);
     font-weight: 600;
@@ -413,41 +466,33 @@ main {
 
 .route-card .button:hover {
     background-color: var(--color-accent);
-    color: var(--color-secondary);
-    text-shadow: none;
+    border-color: var(--color-accent);
+    color: var(--color-primary);
     box-shadow: 0 0 10px var(--color-glow);
 }
-.routes-more {
-    margin-top: var(--spacing-lg);
-    text-align: center;
-    color: var(--color-text-muted);
-    font-style: italic;
-}
 .routes-intro {
-    color: var(--color-text-muted);
+    color: var(--color-text);
     margin-bottom: var(--spacing-md);
 }
 /* Page Content Sections */
 .page {
-    background: rgba(26, 29, 46, 0.9);
-    backdrop-filter: blur(15px);
+    background: var(--color-surface);
     padding: var(--spacing-xl);
     border-radius: var(--border-radius);
-    box-shadow: 0 12px 40px var(--color-shadow-hover);
+    box-shadow: 0 2px 8px var(--color-shadow);
     margin: var(--spacing-xl) auto;
-    border: 2px solid var(--color-accent);
+    border: 1px solid var(--color-border);
     max-width: 800px;
 }
 
 .page h2 {
-    color: var(--color-accent);
+    color: var(--color-primary);
     margin-bottom: var(--spacing-md);
-    text-shadow: 0 2px 10px var(--color-glow);
     border-bottom-color: var(--color-accent);
 }
 
 .page h3 {
-    color: var(--color-text-light);
+    color: var(--color-primary);
     margin-top: var(--spacing-lg);
     margin-bottom: var(--spacing-sm);
 }
@@ -474,12 +519,11 @@ main {
 
 /* Footer */
 .site-footer {
-    background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-blue) 100%);
-    color: var(--color-text-light);
+    background: var(--color-secondary);
+    color: var(--color-text-on-dark);
     padding: var(--spacing-lg) 0;
     margin-top: var(--spacing-xl);
     border-top: 3px solid var(--color-accent);
-    box-shadow: 0 -4px 12px var(--color-shadow);
 }
 
 .footer-content {
@@ -498,7 +542,6 @@ main {
 
 .footer-content a:hover {
     color: var(--color-accent-hover);
-    text-shadow: 0 0 8px var(--color-glow);
 }
 
 /* Accessibility */
@@ -506,8 +549,8 @@ main {
     position: absolute;
     top: -40px;
     left: 0;
-    background: var(--color-accent);
-    color: var(--color-text-light);
+    background: var(--color-secondary);
+    color: var(--color-text-on-dark);
     padding: 8px;
     z-index: 100;
     transition: top 0.3s;
@@ -526,6 +569,19 @@ main {
         text-align: center;
         gap: var(--spacing-md);
     }
+
+    .site-title {
+        flex-direction: column;
+        font-size: 1.8rem;
+    }
+
+    .site-title a {
+        flex-direction: column;
+    }
+
+    .site-logo {
+        height: 40px;
+    }
     
     .site-nav {
         margin-top: var(--spacing-md);
@@ -537,6 +593,10 @@ main {
         text-align: center;
     }
     
+    .hero {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -547,7 +607,6 @@ main {
     
     .hero-image {
         margin: var(--spacing-md) auto;
-        border-width: 1px;
     }
     
     .cards {
@@ -571,9 +630,8 @@ main {
     bottom: 0;
     left: 0;
     right: 0;
-    background: var(--color-secondary);
-    border-top: 2px solid var(--color-accent);
-    color: var(--color-text-light);
+    background: var(--color-primary);
+    color: var(--color-text-on-dark);
     padding: var(--spacing-sm) var(--spacing-md);
     display: flex;
     align-items: center;
@@ -591,13 +649,13 @@ main {
 
 .cookie-notice-btn {
     background: var(--color-accent);
-    color: #fff;
+    color: var(--color-primary);
     border: none;
     border-radius: var(--border-radius);
     padding: 0.4rem 1rem;
     font-family: var(--font-body);
     font-size: 0.875rem;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     white-space: nowrap;
     transition: background var(--transition-speed);
