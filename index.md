@@ -71,7 +71,7 @@ title: Home
         <li><strong>Facebook Group:</strong> <a href="https://www.facebook.com/groups/doverrunclub" target="_blank" rel="noopener">Join the {{ site.title }} group</a></li>
         <li><strong>Instagram:</strong> <a href="https://www.instagram.com/doverrunclubnh/" target="_blank" rel="noopener">Follow {{ site.title }} on Instagram</a></li>
         <li><strong>Strava Club:</strong> <a href="https://www.strava.com/clubs/1768701" target="_blank" rel="noopener">Join {{ site.title }} on Strava</a></li>
-        {% if site.merch_url and site.merch_url != "" %}
+        {% if site.merch_url and site.merch_url != blank %}
         <li><strong>Merch:</strong> Rep the club — <a href="{{ site.merch_url }}" target="_blank" rel="noopener">shop {{ site.title }} gear</a></li>
         {% endif %}
         <li><strong>Response expectations:</strong> Messages are checked by volunteers; we aim to respond within 48 hours.</li>
