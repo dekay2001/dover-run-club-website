@@ -10,6 +10,9 @@ url: "https://www.doverrunclub.com" # production base hostname & protocol
 # Third-party integrations (set to false to disable in non-production builds)
 mailchimp_enabled: true
 
+# External links
+merch_url: "https://doverrunclub.printful.me/"
+
 # Build settings
 markdown: kramdown
 theme: minima
