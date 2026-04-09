@@ -21,7 +21,7 @@ plugins:
   - jekyll-sitemap
 
 # SEO Settings
-logo: /assets/images/run-club-group-photo.jpg
+logo: /assets/images/DRC-FinalLogo.svg
 social:
   name: Dover Run Club
   links:
