@@ -61,6 +61,12 @@ bundle exec jekyll build
 - [plan-qna.prompt.md](prompts/plan-qna.prompt.md) — clarifying questions followed by full plan generation
 - [implement-from-plan.prompt.md](prompts/implement-from-plan.prompt.md) — implementation of approved plan with stepwise validation
 
+## Skills
+
+| Skill | Purpose | File |
+|-------|---------|------|
+| image-asset-management | Image resizing, favicon generation, SVG integration, and Jekyll image best practices | [SKILL.md](skills/image-asset-management/SKILL.md) |
+
 ## Quick Start Flow
 
 Use this sequence in Chat for non-trivial enhancements:
