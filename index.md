@@ -82,15 +82,25 @@ title: Home
     </ul>
 
     <!-- TODO: Add a photo gallery section here -->
-    <h3>Photos</h3>
-    <img 
-        class="responsive-img"
-        srcset="{{ '/assets/images/DCR_20260310-400.jpg' | relative_url }} 400w,
-                {{ '/assets/images/DCR_20260310-800.jpg' | relative_url }} 800w,
-                {{ '/assets/images/DCR_20260310-1200.jpg' | relative_url }} 1200w"
-        sizes="(max-width: 800px) 100vw, 800px"
-        src="{{ '/assets/images/DCR_20260310-1200.jpg' | relative_url }}" 
-        alt="{{ site.title }}'s first official run club photo">
+    <h3>Community Photos</h3>
+    <div class="gallery-grid">
+        {% for photo in site.data.gallery limit:2 %}
+        <div class="gallery-card">
+            <div class="gallery-image-wrapper">
+                <img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | default: photo.title }}" class="gallery-image" loading="lazy">
+            </div>
+            <div class="gallery-caption-wrapper">
+                <h4 class="gallery-title">{{ photo.title }}</h4>
+                <div class="gallery-meta">{{ photo.date | date: "%B %d, %Y" }}</div>
+                <p class="gallery-caption">{{ photo.caption | truncatewords: 15 }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <div style="text-align: center; margin-top: var(--spacing-lg);">
+        <a href="{{ '/gallery.html' | relative_url }}" class="button">View Full Gallery →</a>
+    </div>
 </div>
 
 <div class="page">
