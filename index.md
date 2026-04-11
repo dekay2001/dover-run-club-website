@@ -81,10 +81,10 @@ title: Home
         <li><strong>Response expectations:</strong> Messages are checked by volunteers; we aim to respond within 48 hours.</li>
     </ul>
 
-    <!-- TODO: Add a photo gallery section here -->
     <h3>Community Photos</h3>
+    {% assign recent_photos = site.data.gallery | sort: "date" | reverse %}
     <div class="gallery-grid">
-        {% for photo in site.data.gallery limit:2 %}
+        {% for photo in recent_photos limit:2 %}
         <div class="gallery-card">
             <div class="gallery-image-wrapper">
                 <img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | default: photo.title }}" class="gallery-image" loading="lazy">
@@ -98,8 +98,8 @@ title: Home
         {% endfor %}
     </div>
     
-    <div style="text-align: center; margin-top: var(--spacing-lg);">
-        <a href="{{ '/gallery.html' | relative_url }}" class="button">View Full Gallery →</a>
+    <div class="gallery-cta-wrapper">
+        <a href="{{ '/gallery.html' | relative_url }}" class="button">View Full Gallery &rarr;</a>
     </div>
 </div>
 

@@ -24,6 +24,6 @@ title: Photo Gallery
     {% endfor %}
 </div>
 
-<div class="gallery-footer" style="text-align: center; margin-top: var(--spacing-xl);">
-    <a href="{{ '/' | relative_url }}" class="button">? Back to Home</a>
+<div class="gallery-cta-wrapper">
+    <a href="{{ '/' | relative_url }}" class="button">&larr; Back to Home</a>
 </div>
