@@ -6,7 +6,7 @@ title: Photo Gallery
 <!-- Note: Per Phase 1 rules, this page is deliberately NOT linked in the main navigation header. It is accessed via the homepage Photos section. -->
 
 <div class="gallery-intro">
-    <p>Scenes from our Tuesday night runs, community events, and member accomplishments. We run and then we pub, in that order.</p>
+    <p>Scenes from our Tuesday night runs, community events, and member accomplishments.</p>
 </div>
 
 <div class="gallery-grid">
