@@ -3,7 +3,7 @@ description: [dover-run-club-website] Implementation agent for minimal, validate
 tools: ['search', 'usages', 'problems', 'todos', 'runSubagent', 'editFiles', 'runCommands', 'createFiles']
 handoffs:
   - label: Verify Changes
-    agent: verify
+    agent: drc-verify
     prompt: Verify the implemented changes with build checks, smoke tests, and targeted content validation.
     send: true
 ---
