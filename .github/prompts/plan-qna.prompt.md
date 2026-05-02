@@ -1,5 +1,5 @@
 ---
-agent: plan
+agent: drc-plan
 description: Ask clarifying questions and then produce a complete implementation plan.
 ---
 

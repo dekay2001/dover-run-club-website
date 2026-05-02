@@ -50,10 +50,10 @@ bundle exec jekyll build
 
 ## Agents
 
-- [idea.agent.md](agents/idea.agent.md) — brainstorms and prioritizes enhancement ideas, and outputs roadmap-ready TODO entries
-- [plan.agent.md](agents/plan.agent.md) — creates sequence-aware implementation plans using `plan-template.md`
-- [implement.agent.md](agents/implement.agent.md) — executes approved plans with clean code + SOLID focus and incremental validation
-- [verify.agent.md](agents/verify.agent.md) — build, HTTP smoke tests, stale-ref checks, and content spot-checks for local validation
+- [drc-idea.agent.md](agents/drc-idea.agent.md) — brainstorms and prioritizes enhancement ideas, and outputs roadmap-ready TODO entries
+- [drc-plan.agent.md](agents/drc-plan.agent.md) — creates sequence-aware implementation plans using `plan-template.md`
+- [drc-implement.agent.md](agents/drc-implement.agent.md) — executes approved plans with clean code + SOLID focus and incremental validation
+- [drc-verify.agent.md](agents/drc-verify.agent.md) — build, HTTP smoke tests, stale-ref checks, and content spot-checks for local validation
 
 ## Prompts
 

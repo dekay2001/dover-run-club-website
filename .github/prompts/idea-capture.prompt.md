@@ -1,5 +1,5 @@
 ---
-agent: idea
+agent: drc-idea
 description: Generate and prioritize website enhancement ideas and produce roadmap-ready TODO entries.
 ---
 

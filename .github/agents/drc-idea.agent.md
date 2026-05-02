@@ -3,7 +3,7 @@ description: [dover-run-club-website] Idea agent for enhancement backlog and pri
 tools: ['search', 'usages', 'problems', 'fetch', 'todos', 'runSubagent']
 handoffs:
   - label: Start Planning
-    agent: plan
+    agent: drc-plan
     prompt: Create an implementation plan for the approved roadmap TODO(s) in incremental, validation-first steps.
     send: true
 ---

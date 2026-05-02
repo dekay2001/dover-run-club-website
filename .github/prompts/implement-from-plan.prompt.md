@@ -1,5 +1,5 @@
 ---
-agent: implement
+agent: drc-implement
 description: Implement an approved plan in incremental steps and validate each step.
 ---
 

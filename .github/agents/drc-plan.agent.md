@@ -3,7 +3,7 @@ description: "[dover-run-club-website] Architect/planner for detailed implementa
 tools: ['search', 'usages', 'problems', 'fetch', 'todos', 'runSubagent']
 handoffs:
   - label: Start Implementation
-    agent: implement
+    agent: drc-implement
     prompt: Implement the approved plan in incremental steps and validate each step.
     send: true
 ---
