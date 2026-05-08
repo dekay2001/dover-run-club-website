@@ -2,6 +2,7 @@
 layout: page
 title: Events & Race Calendar
 description: Upcoming runs, races, and club events
+published: false
 ---
 
 ## Upcoming Events
@@ -54,4 +55,4 @@ Looking back at our amazing 2025 season:
 
 ---
 
-**Want to suggest an event?** Contact us at {{ site.email }}
+**Want to suggest an event?** Contact us at {{ site.contact_email }}

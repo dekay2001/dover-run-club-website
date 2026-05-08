@@ -15,7 +15,6 @@ merch_url: "https://doverrunclub.printful.me/"
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -40,17 +39,3 @@ exclude:
   - vendor/ruby/
   - README.md
   - LICENSE
-
-# Collections for organizing content
-collections:
-  events:
-    output: true
-    permalink: /events/:name/
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "events"
-    values:
-      layout: "page"

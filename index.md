@@ -87,7 +87,14 @@ title: Home
         {% for photo in recent_photos limit:2 %}
         <div class="gallery-card">
             <div class="gallery-image-wrapper">
+                {% if photo.image_base %}
+                <img src="{{ photo.image | relative_url }}"
+                     srcset="{{ photo.image_base | append: '-400.jpg' | relative_url }} 400w, {{ photo.image_base | append: '-800.jpg' | relative_url }} 800w, {{ photo.image_base | append: '-1200.jpg' | relative_url }} 1200w"
+                     sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1200px"
+                     alt="{{ photo.alt | default: photo.title }}" class="gallery-image" loading="lazy">
+                {% else %}
                 <img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | default: photo.title }}" class="gallery-image" loading="lazy">
+                {% endif %}
             </div>
             <div class="gallery-caption-wrapper">
                 <h4 class="gallery-title">{{ photo.title }}</h4>
@@ -105,55 +112,13 @@ title: Home
 
 <div class="page">
     <h2>Common Routes</h2>
-    <div class="route-cards">
-        {% for route in site.data.routes %}
-        <div class="route-card">
-            <h3 class="route-title">{{ route.title }}</h3>
-            {% if route.image %}
-                {% if route.strava_url %}
-                <a href="{{ route.strava_url }}" class="route-image-link" target="_blank" rel="noopener" title="View {{ route.title }} map on Strava">
-                    <img src="{{ route.image | relative_url }}" alt="Map for {{ route.title }}">
-                </a>
-                {% else %}
-                <img src="{{ route.image | relative_url }}" alt="Map for {{ route.title }}">
-                {% endif %}
-            {% endif %}
-            <div class="route-card-content">
-                <p>{{ route.description }}</p>
-                {% if route.strava_url and route.image == nil %}
-                <a href="{{ route.strava_url }}" class="button" target="_blank" rel="noopener">View on Strava</a>
-                {% endif %}
-            </div>
-        </div>
-        {% endfor %}
-    </div>
+    {% include route-card.html routes=site.data.routes %}
 </div>
 
 <div class="page">
     <h2>Alternate Routes</h2>
     <p class="routes-intro">Routes contributed by club members — same great Dover roads, new perspectives.</p>
-    <div class="route-cards">
-        {% for route in site.data.member_routes %}
-        <div class="route-card">
-            <h3 class="route-title">{{ route.title }}</h3>
-            {% if route.image %}
-                {% if route.strava_url %}
-                <a href="{{ route.strava_url }}" class="route-image-link" target="_blank" rel="noopener" title="View {{ route.title }} map on Strava">
-                    <img src="{{ route.image | relative_url }}" alt="Map for {{ route.title }}">
-                </a>
-                {% else %}
-                <img src="{{ route.image | relative_url }}" alt="Map for {{ route.title }}">
-                {% endif %}
-            {% endif %}
-            <div class="route-card-content">
-                {% if route.description %}<p>{{ route.description }}</p>{% endif %}
-                {% if route.strava_url and route.image == nil %}
-                <a href="{{ route.strava_url }}" class="button" target="_blank" rel="noopener">View on Strava</a>
-                {% endif %}
-            </div>
-        </div>
-        {% endfor %}
-    </div>
+    {% include route-card.html routes=site.data.member_routes %}
 </div>
 
 <div class="page">

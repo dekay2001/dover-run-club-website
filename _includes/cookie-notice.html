@@ -12,6 +12,7 @@
         var dismissButton = document.getElementById('cookie-notice-dismiss');
         if (localStorage.getItem('cookieNoticeDismissed') === 'true') {
             cookieNoticeElement.remove();
+            return;
         }
         dismissButton.addEventListener('click', function () {
             localStorage.setItem('cookieNoticeDismissed', 'true');

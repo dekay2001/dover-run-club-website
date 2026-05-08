@@ -251,12 +251,12 @@ main {
     opacity: 0.9;
 }
 
-.hero-tagline {
-    font-size: 1.6rem !important;
-    color: var(--color-accent) !important;
+.hero .hero-tagline {
+    font-size: 1.6rem;
+    color: var(--color-accent);
     font-style: italic;
-    font-weight: 400 !important;
-    margin-bottom: var(--spacing-md) !important;
+    font-weight: 400;
+    margin-bottom: var(--spacing-md);
     text-shadow: 0 1px 8px var(--color-glow);
 }
 
@@ -315,7 +315,9 @@ main {
     text-align: center;
 }
 
-.card:hover {
+.card:hover,
+.route-card:hover,
+.gallery-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px var(--color-shadow-hover), 0 0 12px var(--color-glow);
     border-color: var(--color-accent);
@@ -330,14 +332,6 @@ main {
 .card p {
     color: var(--color-text);
     line-height: 1.6;
-}
-
-.responsive-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: var(--border-radius);
-    margin: var(--spacing-md) 0;
 }
 
 /* Route Cards Grid */
@@ -369,12 +363,6 @@ main {
     display: flex;
     flex-direction: column;
     transition: all var(--transition-speed) ease;
-}
-
-.route-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px var(--color-shadow-hover), 0 0 12px var(--color-glow);
-    border-color: var(--color-accent);
 }
 
 .route-title {
@@ -670,12 +658,6 @@ main {
     display: flex;
     flex-direction: column;
     transition: all var(--transition-speed) ease;
-}
-
-.gallery-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px var(--color-shadow-hover), 0 0 12px var(--color-glow);
-    border-color: var(--color-accent);
 }
 
 .gallery-image-wrapper {
