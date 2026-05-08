@@ -2,6 +2,7 @@
 layout: page
 title: Our Sponsors
 description: Thanks to our amazing sponsors who support the club
+published: false
 ---
 
 ## Thank You to Our Sponsors
@@ -70,4 +71,4 @@ We also welcome donations of products, services, or venue space!
 
 ### Contact Us
 
-To discuss sponsorship opportunities, please email {{ site.email }}.
+To discuss sponsorship opportunities, please email {{ site.contact_email }}.

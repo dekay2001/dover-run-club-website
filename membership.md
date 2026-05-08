@@ -2,6 +2,7 @@
 layout: page
 title: Membership
 description: Join our club and become part of the running community
+published: false
 ---
 
 ## Become a Member
@@ -69,6 +70,6 @@ We understand life happens! While we can't offer refunds, you're welcome to rejo
 
 ## Contact Us
 
-Questions about membership? Email us at {{ site.email }}
+Questions about membership? Email us at {{ site.contact_email }}
 
 Ready to join? Come to any group run and talk to our membership coordinator!

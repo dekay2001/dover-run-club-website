@@ -1,0 +1,22 @@
+<div class="route-cards">
+    {%- for route in include.routes %}
+    <div class="route-card">
+        <h3 class="route-title">{{ route.title }}</h3>
+        {%- if route.image %}
+            {%- if route.strava_url %}
+            <a href="{{ route.strava_url }}" class="route-image-link" target="_blank" rel="noopener" title="View {{ route.title }} map on Strava">
+                <img src="{{ route.image | relative_url }}" alt="Map for {{ route.title }}">
+            </a>
+            {%- else %}
+            <img src="{{ route.image | relative_url }}" alt="Map for {{ route.title }}">
+            {%- endif %}
+        {%- endif %}
+        <div class="route-card-content">
+            {%- if route.description %}<p>{{ route.description }}</p>{%- endif %}
+            {%- if route.strava_url and route.image == nil %}
+            <a href="{{ route.strava_url }}" class="button" target="_blank" rel="noopener">View on Strava</a>
+            {%- endif %}
+        </div>
+    </div>
+    {%- endfor %}
+</div>

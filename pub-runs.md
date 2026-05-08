@@ -2,6 +2,7 @@
 layout: page
 title: Pub Runs
 description: Combining running with social fun at local pubs
+published: false
 ---
 
 ## What's a Pub Run?
@@ -53,4 +54,4 @@ Coming soon!
 
 ---
 
-**Want to host a pub run at your establishment?** Contact us at {{ site.email }}
+**Want to host a pub run at your establishment?** Contact us at {{ site.contact_email }}
