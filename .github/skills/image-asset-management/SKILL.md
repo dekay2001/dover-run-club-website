@@ -44,6 +44,8 @@ bundle exec jekyll serve --config _config.yml,_config_dev.yml
 ## Logos & Favicons
 
 ### Generate Favicons
+> **Prerequisite:** The script uses `System.Drawing` and requires a **raster input (PNG or JPG)**. Passing an `.svg` file will cause a runtime error — convert the SVG to a high-resolution PNG first (e.g., `logo-1080.png`).
+
 ```powershell
 .\scripts\Generate-Favicons.ps1 -SourceImage "assets/images/logo-1080.png"
 ```
