@@ -6,51 +6,53 @@ description: "Resize images, generate favicons, integrate SVG logos, and follow 
 # Image Asset Management
 
 ## When to Use
+- Adding new photos to the community gallery
 - Resizing photos for responsive variants (400/800/1200px)
-- Generating favicon sets from a source image
-- Integrating SVG or raster logos into the site
-- Adding new images to the Jekyll site
+- Generating favicon sets or integrating SVG/raster logos
+- General Jekyll image best practices
 
-## Scripts
+## Gallery Content Workflow
 
-### Resize Images
-
-Generate responsive image variants from a source image.
-
+### 1. Optimize Photos
+Before adding to the gallery, images must be optimized for fast loading:
 ```powershell
+.\scripts\Resize-Images.ps1 -Path "assets/images/photo.jpg" -Width 1200
 .\scripts\Resize-Images.ps1 -Path "assets/images/photo.jpg" -Width 800
+.\scripts\Resize-Images.ps1 -Path "assets/images/photo.jpg" -Width 400
+```
+- Rename outputs to: `photo-1200.jpg`, `photo-800.jpg`, `photo-400.jpg`.
+
+### 2. Update Gallery Data
+Prepend new entries to `_data/gallery.yml`:
+```yaml
+- image: /assets/images/photo-1200.jpg
+  image_base: /assets/images/photo
+  title: "Race Title"
+  date: "YYYY-MM-DD"
+  caption: "Engagement text."
+  alt: "Accessibility description."
+```
+- `image_base` must be the path WITHOUT the `-size.jpg` suffix.
+
+### 3. Local Preview (Multi-root Fix)
+Use a sub-shell to strictly enforce the working directory:
+```powershell
+powershell -Command "Set-Location 'c:\Dev\dover-run-club-website'; bundle exec jekyll serve --config _config.yml,_config_dev.yml"
 ```
 
-- Outputs `<basename>-resized.<ext>` next to the original
-- Uses System.Drawing with HighQualityBicubic interpolation
-- Rename outputs to follow the convention: `<name>-400.jpg`, `<name>-800.jpg`, `<name>-1200.jpg`
+## Logos & Favicons
 
 ### Generate Favicons
-
-Generate a complete favicon set from a high-res raster image (PNG/JPG).
-
 ```powershell
 .\scripts\Generate-Favicons.ps1 -SourceImage "assets/images/logo-1080.png"
 ```
+- Generates: `favicon-16/32.png`, `apple-touch-icon.png`, etc. in `assets/images/favicons/`.
 
-- **Prerequisite:** Export the SVG logo to a high-res PNG (≥512×512) first. System.Drawing cannot render SVG natively.
-- Outputs to `assets/images/favicons/` by default (override with `-OutputDir`)
-- Generates: `favicon-16.png`, `favicon-32.png`, `apple-touch-icon.png` (180×180), `android-chrome-192.png`, `android-chrome-512.png`
-
-## SVG Logo Integration
-
-The site uses an SVG-first favicon strategy:
-
+### SVG Logo Integration
+The site uses an SVG-first strategy:
 ```html
-<!-- In _layouts/default.html <head> -->
 <link rel="icon" type="image/svg+xml" href="...DRC-FinalLogo.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="...favicons/favicon-32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="...favicons/apple-touch-icon.png">
 ```
-
-- Modern browsers (Chrome 80+, Firefox 41+, Edge 80+) use the SVG favicon
-- Safari and legacy browsers fall back to the 32×32 PNG
-- iOS uses the apple-touch-icon for home screen bookmarks
 
 ## Jekyll Image Best Practices
 
