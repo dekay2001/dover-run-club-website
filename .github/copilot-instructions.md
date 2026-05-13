@@ -65,7 +65,7 @@ bundle exec jekyll build
 
 | Skill | Purpose | File |
 |-------|---------|------|
-| image-asset-management | Image resizing, favicon generation, SVG integration, and Jekyll image best practices | [SKILL.md](skills/image-asset-management/SKILL.md) |
+| image-asset-management | Image resizing, gallery updates, favicon generation, and Jekyll image best practices | [SKILL.md](skills/image-asset-management/SKILL.md) |
 
 ## Quick Start Flow
 
