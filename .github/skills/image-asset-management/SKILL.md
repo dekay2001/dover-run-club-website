@@ -14,13 +14,17 @@ description: "Resize images, generate favicons, integrate SVG logos, and follow 
 ## Gallery Content Workflow
 
 ### 1. Optimize Photos
-Before adding to the gallery, images must be optimized for fast loading:
+Before adding to the gallery, images must be optimized for fast loading. The script outputs `photo-resized.jpg` each time, so rename immediately after each run:
 ```powershell
 .\scripts\Resize-Images.ps1 -Path "assets/images/photo.jpg" -Width 1200
+Rename-Item "assets/images/photo-resized.jpg" "assets/images/photo-1200.jpg"
+
 .\scripts\Resize-Images.ps1 -Path "assets/images/photo.jpg" -Width 800
+Rename-Item "assets/images/photo-resized.jpg" "assets/images/photo-800.jpg"
+
 .\scripts\Resize-Images.ps1 -Path "assets/images/photo.jpg" -Width 400
+Rename-Item "assets/images/photo-resized.jpg" "assets/images/photo-400.jpg"
 ```
-- Rename outputs to: `photo-1200.jpg`, `photo-800.jpg`, `photo-400.jpg`.
 
 ### 2. Update Gallery Data
 Prepend new entries to `_data/gallery.yml`:
