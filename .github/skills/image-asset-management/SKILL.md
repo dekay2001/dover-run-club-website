@@ -35,9 +35,10 @@ Prepend new entries to `_data/gallery.yml`:
 - `image_base` must be the path WITHOUT the `-size.jpg` suffix.
 
 ### 3. Local Preview (Multi-root Fix)
-Use a sub-shell to strictly enforce the working directory:
+Run from the repo root, or set the location to your local clone path first:
 ```powershell
-powershell -Command "Set-Location 'c:\Dev\dover-run-club-website'; bundle exec jekyll serve --config _config.yml,_config_dev.yml"
+Set-Location "<repo-root>"
+bundle exec jekyll serve --config _config.yml,_config_dev.yml
 ```
 
 ## Logos & Favicons
