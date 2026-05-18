@@ -15,8 +15,9 @@ description: Photos from Dover Run Club runs, races, and community events
     <div class="gallery-card">
         <div class="gallery-image-wrapper">
             {% if photo.image_base %}
+            {% assign ext = photo.image | split: '.' | last %}
             <img src="{{ photo.image | relative_url }}"
-                 srcset="{{ photo.image_base | append: '-400.jpg' | relative_url }} 400w, {{ photo.image_base | append: '-800.jpg' | relative_url }} 800w, {{ photo.image_base | append: '-1200.jpg' | relative_url }} 1200w"
+                 srcset="{{ photo.image_base | append: '-400.' | append: ext | relative_url }} 400w, {{ photo.image_base | append: '-800.' | append: ext | relative_url }} 800w, {{ photo.image_base | append: '-1200.' | append: ext | relative_url }} 1200w"
                  sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1200px"
                  alt="{{ photo.alt | default: photo.title }}" class="gallery-image" loading="lazy">
             {% else %}
