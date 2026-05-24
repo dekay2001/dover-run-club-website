@@ -1,4 +1,11 @@
 
+- image: /assets/images/2026-05-24-dover-race-series-capt-jack-casey5k-1200.jpg
+  image_base: /assets/images/2026-05-24-dover-race-series-capt-jack-casey5k
+  title: "Dover Race Series: Captain Jack Casey 5K"
+  date: "2026-05-24"
+  caption: "DRC representing at the Captain Jack Casey 5K! Another great race in the Dover Race Series."
+  alt: "Dover Run Club members at the Captain Jack Casey 5K start line"
+
 - image: /assets/images/2026-05-17-dover-race-series-spirit-of-recovery5k-1200.jpg
   image_base: /assets/images/2026-05-17-dover-race-series-spirit-of-recovery5k
   title: "Dover Race Series: Spirit of Recovery 5K"
@@ -25,7 +32,7 @@
   title: "Dover Race Series: Red's 5K and 5 Mile"
   date: "2026-04-11"
   caption: "Great times running the Red's Shoe Barn Race in the Dover Race Series!"
-  alt: "Runners at the Dover Race Series Red's Race"
+  alt: "Runners at the Dover Race Series Red's Race start line"
 
 - image: /assets/images/2026-03-14-dover-race-series-run-before-you-crawl-1200.jpg
   image_base: /assets/images/2026-03-14-dover-race-series-run-before-you-crawl
