@@ -7,6 +7,7 @@ title: Home
     <h1>Dover Run Club</h1>
     <p class="hero-tagline">Tuesday nights. All paces welcome. Meet, run, and hang after if you'd like.</p>
     <p>Tuesday nights · 6 PM · The Brick · Dover, NH</p>
+    <a href="#common-routes" class="button">View Routes &rarr;</a>
 </div>
 
 <div class="hero-image">
@@ -110,7 +111,7 @@ title: Home
     </div>
 </div>
 
-<div class="page">
+<div id="common-routes" class="page">
     <h2>Common Routes</h2>
     {% include route-card.html routes=site.data.routes %}
 </div>
