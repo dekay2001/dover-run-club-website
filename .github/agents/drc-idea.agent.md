@@ -1,6 +1,6 @@
 ---
-description: [dover-run-club-website] Idea agent for enhancement backlog and prioritization.
-tools: ['search', 'usages', 'problems', 'fetch', 'todos', 'runSubagent']
+description: "[dover-run-club-website] Idea agent for enhancement backlog and prioritization."
+tools: ['search', 'usages', 'problems', 'fetch', 'todos']
 handoffs:
   - label: Start Planning
     agent: drc-plan

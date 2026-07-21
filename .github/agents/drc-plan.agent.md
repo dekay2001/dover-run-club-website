@@ -1,6 +1,6 @@
 ---
 description: "[dover-run-club-website] Architect/planner for detailed implementation plans."
-tools: ['search', 'usages', 'problems', 'fetch', 'todos', 'runSubagent']
+tools: ['search', 'usages', 'problems', 'fetch', 'todos']
 handoffs:
   - label: Start Implementation
     agent: drc-implement
