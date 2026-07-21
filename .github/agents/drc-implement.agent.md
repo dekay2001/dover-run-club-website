@@ -1,5 +1,5 @@
 ---
-description: [dover-run-club-website] Implementation agent for minimal, validated execution.
+description: "[dover-run-club-website] Implementation agent for minimal, validated execution."
 tools: ['search', 'usages', 'problems', 'todos', 'runSubagent', 'editFiles', 'runCommands', 'createFiles']
 handoffs:
   - label: Verify Changes

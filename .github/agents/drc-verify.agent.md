@@ -1,5 +1,5 @@
 ---
-description: [dover-run-club-website] Verify changes locally (build, serve, smoke/content checks).
+description: "[dover-run-club-website] Verify changes locally (build, serve, smoke/content checks)."
 tools: ['runCommands', 'search']
 ---
 

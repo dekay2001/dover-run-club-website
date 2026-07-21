@@ -81,3 +81,9 @@ Use this sequence in Chat for non-trivial enhancements:
 - **Canonical Backlog:** `design/website-roadmap.md` is the source-of-truth for enhancement ideas and TODO status.
 - **Flow:** Idea → Plan → Implement → Verify.
 - **Roadmap Updates:** Whenever structural changes are made, new features are implemented, or page status changes, update `design/website-roadmap.md` in the same change.
+
+## Working with Newer Models
+- **Parallel tool calls:** Batch independent reads/searches (multiple file reads, greps) into the same turn instead of issuing them one at a time.
+- **Subagent delegation:** Fan out to a subagent only for genuinely separate, self-contained work; do simple, single-file lookups inline.
+- **Output discipline:** Be concise. Don't restate the plan or narrate routine steps — report outcomes and next actions.
+- **Trust-but-verify:** Keep explicit validation gates (build/smoke checks after changes) even as step-by-step scripting is trimmed elsewhere — safety checks stay, not the play-by-play.
