@@ -12,6 +12,7 @@
             {%- endif %}
         {%- endif %}
         <div class="route-card-content">
+            {%- if route.contributed_by %}<p class="route-contributor">Contributed by {{ route.contributed_by }}</p>{%- endif %}
             {%- if route.description %}<p>{{ route.description }}</p>{%- endif %}
             {%- if route.strava_url and route.image == nil %}
             <a href="{{ route.strava_url }}" class="button" target="_blank" rel="noopener">View on Strava</a>
