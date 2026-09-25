@@ -6,21 +6,42 @@
         button.addEventListener("click", function () {
             var url = location.origin + location.pathname + "#" + button.dataset.routeId;
             var feedback = button.nextElementSibling;
+            // Touch devices get the native share sheet; desktop pointers copy straight to the clipboard.
+            var isTouch = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
 
-            function showCopied() {
+            function showFeedback(message) {
                 if (!feedback) {
                     return;
                 }
-                feedback.textContent = "Copied!";
+                feedback.textContent = message;
                 window.setTimeout(function () {
                     feedback.textContent = "";
-                }, 2000);
+                }, 3000);
             }
 
-            if (navigator.share) {
-                navigator.share({ url: url }).catch(function () {});
-            } else if (navigator.clipboard) {
-                navigator.clipboard.writeText(url).then(showCopied).catch(function () {});
+            function copyLink() {
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(url).then(function () {
+                        showFeedback("Copied!");
+                    }).catch(function () {
+                        window.prompt("Copy this link:", url);
+                    });
+                } else {
+                    window.prompt("Copy this link:", url);
+                }
+            }
+
+            if (navigator.share && isTouch) {
+                navigator.share({ url: url }).then(function () {
+                    showFeedback("Shared!");
+                }).catch(function (error) {
+                    if (error && error.name === "AbortError") {
+                        return;
+                    }
+                    copyLink();
+                });
+            } else {
+                copyLink();
             }
         });
     });

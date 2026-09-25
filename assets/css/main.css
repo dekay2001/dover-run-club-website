@@ -349,6 +349,11 @@ main {
     line-height: 1.6;
 }
 
+/* Route sections (Common Routes / Member Routes) */
+.route-section + .route-section {
+    margin-top: var(--spacing-xl);
+}
+
 /* Route Cards Grid */
 .route-cards {
     display: grid;
@@ -475,8 +480,11 @@ main {
 }
 
 .route-card:target {
+    /* outline (unlike box-shadow) isn't clipped by .route-card's overflow: hidden */
     border-color: var(--color-accent);
-    box-shadow: 0 0 0 3px var(--color-glow), 0 8px 24px var(--color-shadow-hover);
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+    box-shadow: 0 8px 24px var(--color-shadow-hover);
 }
 
 .route-title a {
@@ -509,8 +517,9 @@ main {
 }
 
 /* Member Routes secondary section: same cards, quieter presentation */
-.route-section-secondary h3 {
+.route-section-heading-secondary {
     font-size: 1.3rem;
+    border-bottom-color: var(--color-border);
 }
 
 .route-section-secondary .route-card {
