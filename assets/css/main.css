@@ -831,3 +831,16 @@ main {
     margin-top: var(--spacing-lg);
     padding: var(--spacing-md) 0;
 }
+
+/* Hero: two primary actions side by side, wrapping on narrow viewports (Phase 2) */
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+/* Gallery preview title sits under the "Community Photos" h2; keep its compact card spacing */
+.gallery-caption-wrapper .gallery-title {
+    margin-top: 0;
+}

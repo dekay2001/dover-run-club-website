@@ -4,8 +4,6 @@ title: Photo Gallery
 description: Photos from Dover Run Club runs, races, and community events
 ---
 
-<!-- Note: Per Phase 1 rules, this page is deliberately NOT linked in the main navigation header. It is accessed via the homepage Photos section. -->
-
 <div class="gallery-intro">
     <p>Scenes from our Tuesday night runs, community events, and member accomplishments.</p>
 </div>
