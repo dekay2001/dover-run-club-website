@@ -20,8 +20,10 @@ Run from the repo root. Reports go to `$env:TEMP\drc-lighthouse\` by default, ou
 # Live site, mobile (the default and the one tracked below)
 .\scripts\Invoke-Lighthouse.ps1
 
-# Compare against a previous run
-$prev = Get-ChildItem "$env:TEMP\drc-lighthouse\*.report.json" | Sort-Object LastWriteTime | Select-Object -Last 1
+# Compare against the previous run of the same form factor and URL
+$prev = Get-ChildItem "$env:TEMP\drc-lighthouse\lighthouse-mobile-*.report.json" |
+    Where-Object { (Get-Content $_ -Raw | ConvertFrom-Json).requestedUrl -eq 'https://www.doverrunclub.com/' } |
+    Sort-Object LastWriteTime | Select-Object -Last 1
 .\scripts\Invoke-Lighthouse.ps1 -CompareTo $prev.FullName
 
 # Local build before pushing (serve first, see copilot-instructions.md)
@@ -32,8 +34,10 @@ $prev = Get-ChildItem "$env:TEMP\drc-lighthouse\*.report.json" | Sort-Object Las
 ```
 The script prints category scores, core metrics, failing audits with the worst offending elements (`-MaxItems`), and a list of what got fixed or newly broke compared with `-CompareTo`. Open the `.report.html` file for full detail.
 
+**Comparisons must be like for like.** The script refuses a `-CompareTo` report from a different form factor, and warns when the URL or Lighthouse version differs. Lighthouse is pinned with `-LighthouseVersion` (default `13.5.0`, the version the baseline used). If you bump it, do so on purpose and record a new baseline row.
+
 ## Interpreting Results
-- **Performance numbers vary a lot between runs.** Lighthouse simulates mobile throttling. On 2026-09-25, two back-to-back runs scored 68 and 83, with LCP at 10.1 s vs 3.6 s and CLS at 0.139 vs 0.021. Run 3 times and use the median before you call something a regression or a fix.
+- **Performance numbers vary a lot between runs.** Lighthouse simulates mobile throttling. On 2026-09-25, three runs of the same unchanged site scored 68, 83, and 62, with LCP from 3.6 s to 11.3 s and CLS at 0.021 or 0.139. Run 3 times and use the median before you call something a regression or a fix.
 - **Accessibility, Best Practices, and SEO results are deterministic.** A single run is enough to tell whether an audit passes.
 - **Localhost vs live:** Only test local builds for accessibility and markup checks. Caching, compression, and CDN behavior differ on GitHub Pages, so measure performance on the live site.
 - Audits with metric IDs (`largest-contentful-paint` and similar) show up in "Core metrics". "Failing audits" lists everything else with a score below 1.
@@ -61,7 +65,7 @@ List open items with `gh issue list --label lighthouse`.
 ## Baseline (mobile, live site)
 | Date | Perf | A11y | Best Pr. | SEO | LCP | CLS | Notes |
 |---|---|---|---|---|---|---|---|
-| 2026-09-25 | 68 / 83 | 95 | 100 | 100 | 10.1 s / 3.6 s | 0.139 / 0.021 | Two runs; issues #50–#55 filed |
+| 2026-09-25 | 68 / 83 / 62 (median 68) | 95 | 100 | 100 | 10.1 s / 3.6 s / 11.3 s | 0.139 / 0.021 / 0.139 | Three runs, Lighthouse 13.5.0; issues #50–#55 filed |
 
 ## Workflow After a Fix
 1. Implement the fix and run `bundle exec jekyll build`.

@@ -29,7 +29,11 @@ param(
     [string]$CompareTo,
 
     [ValidateRange(1, 50)]
-    [int]$MaxItems = 5
+    [int]$MaxItems = 5,
+
+    # Pinned so scoring stays comparable across runs; bump deliberately and re-baseline.
+    [ValidatePattern('^\d+\.\d+\.\d+$')]
+    [string]$LighthouseVersion = '13.5.0'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -67,6 +71,19 @@ if (-not (Get-Command npx -ErrorAction SilentlyContinue)) {
     throw 'npx not found. Install Node.js (LTS) first.'
 }
 
+$baseline = if ($CompareTo) { Get-Content $CompareTo -Raw | ConvertFrom-Json }
+if ($baseline) {
+    if ($baseline.configSettings.formFactor -ne $FormFactor) {
+        throw "-CompareTo report is '$($baseline.configSettings.formFactor)' but this run is '$FormFactor'. Compare like with like."
+    }
+    if ($baseline.requestedUrl -ne $Url) {
+        Write-Warning "-CompareTo report audited $($baseline.requestedUrl), not $Url."
+    }
+    if ($baseline.lighthouseVersion -ne $LighthouseVersion) {
+        Write-Warning "-CompareTo report used Lighthouse $($baseline.lighthouseVersion); this run uses $LighthouseVersion. Deltas may reflect scoring changes."
+    }
+}
+
 $originalChromePath = $env:CHROME_PATH
 if (-not $env:CHROME_PATH) {
     $browser = @(
@@ -86,10 +103,10 @@ try {
     $jsonPath = "$basePath.report.json"
     $htmlPath = "$basePath.report.html"
 
-    $lighthouseArgs = @('--yes', 'lighthouse', $Url, '--output=json', '--output=html', "--output-path=$basePath", '--chrome-flags=--headless=new', '--quiet')
+    $lighthouseArgs = @('--yes', "lighthouse@$LighthouseVersion", $Url, '--output=json', '--output=html', "--output-path=$basePath", '--chrome-flags=--headless=new', '--quiet')
     if ($FormFactor -eq 'desktop') { $lighthouseArgs += '--preset=desktop' }
 
-    Write-Host "Auditing $Url ($FormFactor) with $env:CHROME_PATH ..." -ForegroundColor Cyan
+    Write-Host "Auditing $Url ($FormFactor) with Lighthouse $LighthouseVersion and $env:CHROME_PATH ..." -ForegroundColor Cyan
     & npx @lighthouseArgs
 
     # On Windows, chrome-launcher can exit non-zero on temp-dir cleanup even when the report was written.
@@ -100,7 +117,6 @@ finally {
 }
 
 $report = Get-Content $jsonPath -Raw | ConvertFrom-Json
-$baseline = if ($CompareTo) { Get-Content $CompareTo -Raw | ConvertFrom-Json }
 
 Write-Host "`n== Category scores" -ForegroundColor Yellow
 $scores = Get-CategoryScores $report
