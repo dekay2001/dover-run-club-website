@@ -25,22 +25,22 @@ title: Home
 
 <div class="cards">
     <div class="card">
-        <h3>🏃 When & Where</h3>
+        <h2>🏃 When & Where</h2>
         <p>Every Tuesday at 6 PM we meet at <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> in downtown Dover, NH. Show up, say hi, and run.</p>
     </div>
     
     <div class="card">
-        <h3>🗺️ Variety of Routes</h3>
+        <h2>🗺️ Variety of Routes</h2>
         <p>We mix it up each week with different routes around Dover. Favorites include the <strong><a href="https://www.doverraceseries.org/" target="_blank" rel="noopener">Dover Red's 5-miler</a></strong>, Mount Vernon, Washington, and parts of the community trail. Road routes with hills and flats.</p>
     </div>
     
     <div class="card">
-        <h3>🤝 Optional Post-Run Hang</h3>
+        <h2>🤝 Optional Post-Run Hang</h2>
         <p>We start and finish at The Brick. Many runners stick around for food, drinks, and good company, but plenty come just for the run.</p>
     </div>
     
     <div class="card">
-        <h3>👥 All Paces Welcome</h3>
+        <h2>👥 All Paces Welcome</h2>
         <p>Fast, slow, somewhere in between — doesn't matter. We have runners of all abilities and everyone finds their group.</p>
     </div>
 </div>
