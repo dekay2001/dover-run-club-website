@@ -25,7 +25,7 @@ description: Photos from Dover Run Club runs, races, and community events
             {% endif %}
         </div>
         <div class="gallery-caption-wrapper">
-            <h3 class="gallery-title">{{ photo.title }}</h3>
+            <h2 class="gallery-title">{{ photo.title }}</h2>
             <div class="gallery-meta">{{ photo.date | date: "%B %d, %Y" }}</div>
             <p class="gallery-caption">{{ photo.caption }}</p>
         </div>
