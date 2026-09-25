@@ -33,5 +33,5 @@ Purpose: keep club communication safe, consistent, and low-friction while the we
 - [ ] Record outcomes in a monthly ops note to guide next decisions.
 
 ## Notes
-- Keep Phase 1 single-page behavior unless roadmap decisions explicitly expand navigation.
+- Keep the Phase 2 page set unless roadmap decisions explicitly expand navigation.
 - Prefer low-overhead, reversible changes before formalizing sponsorship tiers.

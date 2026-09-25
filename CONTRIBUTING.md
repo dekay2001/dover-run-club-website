@@ -9,7 +9,7 @@
 ## Scope Discipline
 - Keep changes focused and minimal.
 - Preserve GitHub Pages compatibility.
-- Respect Phase 1 single-page behavior unless explicitly changed.
+- Keep the Phase 2 page set (Home, Routes, Our Story, Gallery, Supporters); keep unfinished pages unpublished and out of the nav unless explicitly changed.
 - Avoid unrelated refactors and avoid exposing hidden pages in main nav by default.
 
 ## Content and Style Rules

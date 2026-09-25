@@ -5,7 +5,7 @@ title: Home
 
 <div class="hero">
     <h1>Dover Run Club</h1>
-    <p class="hero-tagline">Tuesday nights. All paces welcome. Meet, run, and hang after if you'd like.</p>
+    <p class="hero-tagline">Show up, say hi, and run.</p>
     <p>Tuesdays · 6 PM · The Brick · Dover, NH</p>
     <div class="hero-actions">
         <a href="#what-to-expect" class="button">First run? What to expect</a>
@@ -37,13 +37,13 @@ if (location.hash === '#common-routes') {
 <div class="page" id="what-to-expect">
     <h2>What to Expect</h2>
     <p>
-        Every Tuesday at 6 PM, {{ site.title }} meets at <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> in downtown Dover, NH. Show up, say hi, and run — there's no fee, no sign-up sheet, and no pressure.
+        There's no fee, no sign-up sheet, and no pressure. Just come as you are.
     </p>
     <ul>
-        <li><strong>All paces welcome:</strong> Fast, slow, somewhere in between — everyone finds their pace group.</li>
+        <li><strong>All paces welcome:</strong> Fast, slow, somewhere in between. Everyone finds their pace group.</li>
         <li><strong>No experience needed:</strong> Whether it's your first run or your thousandth, you're welcome.</li>
-        <li><strong>Year-round:</strong> We run every Tuesday, rain or shine, summer or winter.</li>
-        <li><strong>Optional post-run hang:</strong> Some folks hang out at The Brick afterward; plenty just come for the run.</li>
+        <li><strong>Year-round:</strong> Rain or shine, summer or winter.</li>
+        <li><strong>Optional post-run hang:</strong> Some folks stick around at <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> afterward; plenty just come for the run.</li>
     </ul>
 </div>
 
@@ -96,7 +96,7 @@ if (location.hash === '#common-routes') {
     <h2>Our Roots</h2>
     <p>
         Dover's running community goes back years, and many of us first connected through the Tuesday pub runs <strong><a href="https://six03endurance.com/" target="_blank" rel="noopener">SIX03 Endurance</a></strong> brought to the Seacoast.
-        {{ site.title }} continues that spirit today, welcoming runners of every pace and keeping the tradition alive.
+        {{ site.title }} carries that spirit forward today.
     </p>
     <p>
         <a href="{{ '/our-story.html' | relative_url }}">Read Our Full Story →</a>
