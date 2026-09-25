@@ -17,7 +17,8 @@
 - `_includes/footer.html`: footer and social link
 - `index.md`: phase-1 homepage and primary user journey
 - `our-story.md`: supporting narrative page linked from homepage content
-- `events.md`, `pub-runs.md`, `membership.md`, `sponsors.md`: placeholder/future pages, intentionally hidden from nav
+- `supporters.md`: Supporters page, data-driven from `_data/supporters.yml`, linked from footer
+- `events.md`, `pub-runs.md`, `membership.md`: placeholder/future pages, intentionally hidden from nav
 - `assets/css/main.css`: design tokens, layout, and responsive styling
 - `design/website-roadmap.md`: roadmap and backlog source-of-truth
 

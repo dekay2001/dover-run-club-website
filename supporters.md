@@ -1,0 +1,30 @@
+---
+layout: page
+title: Our Supporters
+description: Thanks to the local businesses supporting Dover Run Club, and how your business can help
+---
+
+## Thank You to Our Supporters
+
+{{ site.title }} is grateful to the local businesses who've helped keep the club running.
+
+<ul>
+{% for supporter in site.data.supporters %}
+  <li>Thanks to <a href="{{ supporter.url }}" target="_blank" rel="noopener">{{ supporter.name }}</a>{% if supporter.contribution and supporter.contribution != blank %} for our {{ supporter.contribution | downcase }}{% endif %}.</li>
+{% endfor %}
+</ul>
+
+---
+
+## Work With Us
+
+Every Tuesday at 6 PM, {{ site.title }} heads out from The Brick in Dover, NH for a group run — all paces welcome.
+
+If your business or group wants to help keep us running, we'd love to hear from you. Helpful kinds of support include:
+
+- Gear for club runs
+- Venue space for a run or event
+- Co-hosting an event
+- Race or event partnerships
+
+<a href="mailto:{{ site.contact_email }}?subject={{ 'Supporting ' | append: site.title | url_encode | replace: '+', '%20' }}">Email us about supporting the club</a>
