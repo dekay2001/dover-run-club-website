@@ -164,6 +164,17 @@ Edit `membership.md` to modify:
 
 Edit `_data/supporters.yml` to add, update, or remove a supporter (name, website link, and what they contributed). The Supporters page and its list update automatically.
 
+### This Tuesday's Route
+
+Edit `_data/this_week.yml` in the GitHub web editor each week. Update `route_id` and `date`, then commit the change to `master` so the permanent `/routes.html#this-week` link keeps showing the latest route.
+
+Route ids live in the route data files:
+
+- Common routes: `mt-vernon-3mi`, `mt-vernon-4mi`, `mt-vernon-5mi`, `washington-3mi`, `washington-4mi`, `washington-5mi`, `reds-3mi`, `reds-5mi`, `dct-3mi`, `dct-5mi`
+- Member routes: `ksl-dct-3mi`, `ksl-dct-4mi`, `ksl-dct-5mi`, `af-dct-3mi`, `af-dct-5mi`
+
+Permanent link to share: https://www.doverrunclub.com/routes.html#this-week
+
 ### Styling Changes
 
 Edit `assets/css/main.css` to customize:

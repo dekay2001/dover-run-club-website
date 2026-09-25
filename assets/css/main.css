@@ -354,6 +354,53 @@ main {
     margin-top: var(--spacing-xl);
 }
 
+.this-week-callout {
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-primary-dark));
+    border: 1px solid var(--color-accent);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px var(--color-shadow);
+    color: var(--color-text-on-dark);
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    scroll-margin-top: var(--spacing-lg);
+}
+
+.this-week-callout h2 {
+    color: var(--color-text-on-dark);
+    border-bottom-color: var(--color-accent);
+}
+
+.this-week-date {
+    color: var(--color-accent);
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+}
+
+.this-week-route {
+    color: var(--color-text-on-dark);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+}
+
+.this-week-route a {
+    color: var(--color-accent);
+}
+
+.this-week-route a:hover,
+.this-week-route a:focus-visible {
+    color: var(--color-text-on-dark);
+}
+
+.this-week-note {
+    color: var(--color-text-on-dark);
+    font-style: italic;
+    margin-bottom: 0;
+}
+
 /* Route Cards Grid */
 .route-cards {
     display: grid;
