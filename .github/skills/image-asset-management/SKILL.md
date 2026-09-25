@@ -56,9 +56,14 @@ Then add the route to `_data/routes.yml` or `_data/member_routes.yml`:
 ```yaml
   image: "/assets/images/route-new-5mi-800.webp"
   image_base: "/assets/images/route-new-5mi"
+  image_height: 580
 ```
 - `image_base` is the path without the `-400.webp` / `-800.webp` suffix; the include builds the `srcset` from it.
-- Source maps should be roughly 800×576 (the include's `width`/`height` reserve that aspect ratio).
+- `image_height` is the 800w variant's real height, so the card reserves exactly the right space (no layout shift). Get it from the source PNG:
+  ```powershell
+  Add-Type -AssemblyName System.Drawing; $i = [System.Drawing.Image]::FromFile((Resolve-Path assets/images/route-new-5mi.png)); [math]::Round($i.Height * 800 / $i.Width, [MidpointRounding]::AwayFromZero); $i.Dispose()
+  ```
+  If it's missing, the image renders without `width`/`height` and Lighthouse flags `unsized-images`.
 
 ## Logos & Favicons
 
