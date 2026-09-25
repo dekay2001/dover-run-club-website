@@ -66,6 +66,7 @@ bundle exec jekyll build
 | Skill | Purpose | File |
 |-------|---------|------|
 | image-asset-management | Image resizing, gallery updates, favicon generation, and Jekyll image best practices | [SKILL.md](skills/image-asset-management/SKILL.md) |
+| lighthouse-audit | Run/compare Lighthouse audits (`scripts/Invoke-Lighthouse.ps1`), triage findings, track as `lighthouse` GitHub issues | [SKILL.md](skills/lighthouse-audit/SKILL.md) |
 
 ## Quick Start Flow
 
