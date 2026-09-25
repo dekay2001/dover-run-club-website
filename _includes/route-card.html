@@ -1,7 +1,8 @@
 <div class="route-cards">
     {%- for route in include.routes %}
-    <div class="route-card">
-        <h3 class="route-title">{{ route.title }}</h3>
+    {%- assign route_id = route.id | default: route.title | slugify %}
+    <div class="route-card" id="{{ route_id }}">
+        <h3 class="route-title"><a href="#{{ route_id }}">{{ route.title }}</a></h3>
         {%- if route.image %}
             {%- capture route_img -%}
             <img src="{{ route.image | relative_url }}"
@@ -22,6 +23,10 @@
             {%- if route.strava_url and route.image == nil %}
             <a href="{{ route.strava_url }}" class="button" target="_blank" rel="noopener">View on Strava</a>
             {%- endif %}
+            <div class="route-actions">
+                <button type="button" class="button route-copy-link" data-route-id="{{ route_id }}">Copy link</button>
+                <span class="route-copy-feedback" aria-live="polite"></span>
+            </div>
         </div>
     </div>
     {%- endfor %}

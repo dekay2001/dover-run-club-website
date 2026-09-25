@@ -468,6 +468,59 @@ main {
     color: var(--color-text);
     margin-bottom: var(--spacing-md);
 }
+
+/* Per-route anchor targets, so a shared link lands on and highlights its card */
+.route-card {
+    scroll-margin-top: var(--spacing-lg);
+}
+
+.route-card:target {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px var(--color-glow), 0 8px 24px var(--color-shadow-hover);
+}
+
+.route-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.route-title a:hover,
+.route-title a:focus-visible {
+    text-decoration: underline;
+}
+
+/* Copy link / share button and its feedback message */
+.route-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.route-copy-link {
+    font-size: 0.9rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.route-copy-feedback {
+    color: var(--color-text-heading);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Member Routes secondary section: same cards, quieter presentation */
+.route-section-secondary h3 {
+    font-size: 1.3rem;
+}
+
+.route-section-secondary .route-card {
+    box-shadow: none;
+}
+
+.route-section-secondary .route-title {
+    font-size: 1.05rem;
+}
+
 /* Page Content Sections */
 .page {
     background: var(--color-surface);

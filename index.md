@@ -7,8 +7,15 @@ title: Home
     <h1>Dover Run Club</h1>
     <p class="hero-tagline">Tuesday nights. All paces welcome. Meet, run, and hang after if you'd like.</p>
     <p>Tuesday nights · 6 PM · The Brick · Dover, NH</p>
-    <a href="#common-routes" class="button">View Routes &rarr;</a>
+    <a href="{{ '/routes.html' | relative_url }}" class="button">View Routes &rarr;</a>
 </div>
+
+<script>
+// Old shared links pointed at #common-routes on the homepage; send them to the new Routes page.
+if (location.hash === '#common-routes') {
+    location.replace('{{ "/routes.html" | relative_url }}');
+}
+</script>
 
 <div class="hero-image">
     <img 
@@ -110,17 +117,6 @@ title: Home
     <div class="gallery-cta-wrapper">
         <a href="{{ '/gallery.html' | relative_url }}" class="button">View Full Gallery &rarr;</a>
     </div>
-</div>
-
-<div id="common-routes" class="page">
-    <h2>Common Routes</h2>
-    {% include route-card.html routes=site.data.routes %}
-</div>
-
-<div class="page">
-    <h2>Alternate Routes</h2>
-    <p class="routes-intro">Routes contributed by club members — same great Dover roads, new perspectives.</p>
-    {% include route-card.html routes=site.data.member_routes %}
 </div>
 
 <div class="page">
