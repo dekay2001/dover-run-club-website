@@ -39,7 +39,7 @@ These pages are kept in the repo for future development but are **not in the nav
 | Site structure | Single page (home only) — _superseded 2026-09-25_ | Keep it simple; don't expose unfinished pages |
 | Site structure (Phase 2) | Multi-page, audience-based navigation (2026-09-25) | Homepage became cluttered serving newcomers, weekly runners, run admins, and supporters at once |
 | Member routes | Secondary list, distinct from Common Routes | Common routes are the club's official set; member routes are extras |
-| Tone | Casual & fun | Matches the social pub-run culture of the group |
+| Tone | Casual, running-first | Running is the focus; the post-run hang is optional and mentioned briefly (pub motto retired 2026-09-25) |
 | Six03 Endurance | Not prominently featured | Club has its own identity; affiliation may be added later |
 | Membership/fees | Not applicable for now | No membership structure currently needed |
 

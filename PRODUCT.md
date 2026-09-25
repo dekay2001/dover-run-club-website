@@ -35,7 +35,7 @@ Provide a simple, welcoming web presence for Dover Run Club that answers the ess
 - No publishing placeholder content as primary user paths.
 
 ## Tone
-Casual, welcoming, and inclusive. Clear language, low friction, and community-first voice aligned with: "We run and then we pub, in that order."
+Casual, welcoming, and inclusive. Clear language, low friction, and a running-first, community-first voice. The post-run hang at The Brick is optional: mention it briefly, never lead with it.
 
 ## Success Criteria
 - Visitors can identify What/When/Where/Vibe within seconds on first load.

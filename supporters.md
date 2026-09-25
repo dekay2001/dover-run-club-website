@@ -18,9 +18,9 @@ description: Thanks to the local businesses supporting Dover Run Club, and how y
 
 ## Work With Us
 
-We run and then we pub, in that order. Every Tuesday at 6 PM, {{ site.title }} heads out from The Brick in Dover, NH — all paces welcome.
+Every Tuesday at 6 PM, {{ site.title }} heads out from The Brick in Dover, NH for a group run — all paces welcome.
 
-If your business or group wants to help us keep that going, we'd love to hear from you. Helpful kinds of support include:
+If your business or group wants to help keep us running, we'd love to hear from you. Helpful kinds of support include:
 
 - Gear for club runs
 - Venue space for a run or event
