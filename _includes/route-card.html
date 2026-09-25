@@ -3,12 +3,17 @@
     <div class="route-card">
         <h3 class="route-title">{{ route.title }}</h3>
         {%- if route.image %}
+            {%- capture route_img -%}
+            <img src="{{ route.image | relative_url }}"
+                 {%- if route.image_base %} srcset="{{ route.image_base | append: '-400.webp' | relative_url }} 400w, {{ route.image_base | append: '-800.webp' | relative_url }} 800w" sizes="(min-width: 1024px) 400px, (min-width: 768px) 50vw, 100vw"{% endif %}
+                 width="800" height="576" loading="lazy" decoding="async" alt="Map for {{ route.title }}">
+            {%- endcapture %}
             {%- if route.strava_url %}
             <a href="{{ route.strava_url }}" class="route-image-link" target="_blank" rel="noopener" title="View {{ route.title }} map on Strava">
-                <img src="{{ route.image | relative_url }}" alt="Map for {{ route.title }}">
+                {{ route_img }}
             </a>
             {%- else %}
-            <img src="{{ route.image | relative_url }}" alt="Map for {{ route.title }}">
+            {{ route_img }}
             {%- endif %}
         {%- endif %}
         <div class="route-card-content">

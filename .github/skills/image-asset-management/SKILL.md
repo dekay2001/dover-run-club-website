@@ -45,6 +45,21 @@ Set-Location "<repo-root>"
 bundle exec jekyll serve --config _config.yml,_config_dev.yml
 ```
 
+## Route Map Images
+
+Route cards (`_includes/route-card.html`) serve WebP at 400w and 800w. Clicking a map opens Strava, so no full-size version is needed. Keep the source PNG and generate both variants with pinned `sharp-cli` (needs Node.js):
+```powershell
+npx --yes sharp-cli@6.1.0 -i assets/images/route-new-5mi.png -o "assets/images/{name}-400.webp" -f webp -q 80 resize 400
+npx --yes sharp-cli@6.1.0 -i assets/images/route-new-5mi.png -o "assets/images/{name}-800.webp" -f webp -q 80 resize 800
+```
+Then add the route to `_data/routes.yml` or `_data/member_routes.yml`:
+```yaml
+  image: "/assets/images/route-new-5mi-800.webp"
+  image_base: "/assets/images/route-new-5mi"
+```
+- `image_base` is the path without the `-400.webp` / `-800.webp` suffix; the include builds the `srcset` from it.
+- Source maps should be roughly 800×576 (the include's `width`/`height` reserve that aspect ratio).
+
 ## Logos & Favicons
 
 ### Generate Favicons
