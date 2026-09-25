@@ -18,6 +18,7 @@ title: Home
         sizes="(max-width: 900px) 100vw,
                900px"
         src="{{ '/assets/images/run-club-group-photo-1200.jpg' | relative_url }}" 
+        width="1200" height="588" fetchpriority="high"
         alt="Dover Run Club group photo">
 </div>
 
