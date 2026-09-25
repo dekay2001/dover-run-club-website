@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 3rem;
-    color: var(--color-primary);
+    color: var(--color-text-heading);
 }
 
 h2 {
@@ -133,7 +133,7 @@ h2 {
 
 h3 {
     font-size: 1.75rem;
-    color: var(--color-primary);
+    color: var(--color-text-heading);
 }
 
 p {
@@ -142,14 +142,21 @@ p {
 
 /* Links */
 a {
-    color: var(--color-primary);
+    color: var(--color-accent);
     text-decoration: none;
     transition: all var(--transition-speed) ease;
     font-weight: 500;
 }
 
+/* Gold is close to body-text luminance, so in-text links need an underline to be distinguishable (WCAG 1.4.1). */
+main p a,
+main li a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
 a:hover {
-    color: var(--color-accent);
+    color: var(--color-text-on-dark);
     text-shadow: 0 0 6px var(--color-glow);
 }
 
@@ -330,7 +337,7 @@ main {
 }
 
 .card h2 {
-    color: var(--color-primary);
+    color: var(--color-text-heading);
     margin-bottom: var(--spacing-md);
     font-size: 1.5rem;
     border-bottom: none;
@@ -376,7 +383,7 @@ main {
 .route-title {
     margin: 0;
     padding: var(--spacing-sm) var(--spacing-md);
-    color: var(--color-primary);
+    color: var(--color-text-heading);
     font-size: 1.2rem;
     text-align: center;
     border-bottom: 2px solid var(--color-border);
@@ -446,7 +453,7 @@ main {
 }
 
 .route-card-content .route-contributor {
-    color: var(--color-primary);
+    color: var(--color-text-heading);
     font-weight: bold;
     margin-top: 0;
     margin-bottom: var(--spacing-sm);
@@ -473,13 +480,13 @@ main {
 }
 
 .page h2 {
-    color: var(--color-primary);
+    color: var(--color-text-heading);
     margin-bottom: var(--spacing-md);
     border-bottom-color: var(--color-accent);
 }
 
 .page h3 {
-    color: var(--color-primary);
+    color: var(--color-text-heading);
     margin-top: var(--spacing-lg);
     margin-bottom: var(--spacing-sm);
 }
@@ -506,7 +513,7 @@ main {
 
 /* Footer */
 .site-footer {
-    background: var(--color-secondary);
+    background: var(--color-primary-dark);
     color: var(--color-text-on-dark);
     padding: var(--spacing-lg) 0;
     margin-top: var(--spacing-xl);
@@ -636,7 +643,7 @@ main {
 
 .cookie-notice-btn {
     background: var(--color-accent);
-    color: var(--color-primary);
+    color: var(--color-background);
     border: none;
     border-radius: var(--border-radius);
     padding: 0.4rem 1rem;
@@ -707,7 +714,7 @@ main {
 
 .gallery-title {
     margin: 0 0 var(--spacing-xs) 0;
-    color: var(--color-primary);
+    color: var(--color-text-heading);
     font-size: 1.25rem;
     border-bottom: none;
     padding-bottom: 0;
@@ -747,7 +754,7 @@ main {
 .button:hover {
     background-color: var(--color-accent);
     border-color: var(--color-accent);
-    color: var(--color-primary);
+    color: var(--color-background);
     box-shadow: 0 0 10px var(--color-glow);
 }
 
