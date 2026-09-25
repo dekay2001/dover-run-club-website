@@ -24,7 +24,7 @@
             <a href="{{ route.strava_url }}" class="button" target="_blank" rel="noopener">View on Strava</a>
             {%- endif %}
             <div class="route-actions">
-                <button type="button" class="button route-copy-link" data-route-id="{{ route_id }}">Copy link</button>
+                <button type="button" class="button route-copy-link" data-route-url="{{ '/routes.html' | absolute_url }}#{{ route_id }}">Copy link</button>
                 <span class="route-copy-feedback" aria-live="polite"></span>
             </div>
         </div>

@@ -4,7 +4,7 @@
 
     buttons.forEach(function (button) {
         button.addEventListener("click", function () {
-            var url = location.origin + location.pathname + "#" + button.dataset.routeId;
+            var url = button.dataset.routeUrl;
             var feedback = button.nextElementSibling;
             // Touch devices get the native share sheet; desktop pointers copy straight to the clipboard.
             var isTouch = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
@@ -19,15 +19,31 @@
                 }, 3000);
             }
 
+            function legacyCopy() {
+                var field = document.createElement("textarea");
+                field.value = url;
+                field.setAttribute("readonly", "");
+                field.style.position = "fixed";
+                field.style.opacity = "0";
+                document.body.appendChild(field);
+                field.select();
+                var copied = false;
+                try {
+                    copied = document.execCommand("copy");
+                } catch (error) {
+                    copied = false;
+                }
+                document.body.removeChild(field);
+                showFeedback(copied ? "Copied!" : "Couldn't copy. Use the route title link instead.");
+            }
+
             function copyLink() {
                 if (navigator.clipboard && navigator.clipboard.writeText) {
                     navigator.clipboard.writeText(url).then(function () {
                         showFeedback("Copied!");
-                    }).catch(function () {
-                        window.prompt("Copy this link:", url);
-                    });
+                    }).catch(legacyCopy);
                 } else {
-                    window.prompt("Copy this link:", url);
+                    legacyCopy();
                 }
             }
 
