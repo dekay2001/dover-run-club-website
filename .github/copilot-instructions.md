@@ -46,7 +46,7 @@ bundle exec jekyll build
 - **Tone:** Casual, welcoming, running-first, and inclusive of all paces. The post-run hang at The Brick is optional: mention it briefly, never lead with it. Don't use the retired "We run and then we pub" motto.
 - **Variables:** Prefer using `{{ site.title }}` instead of hardcoding the club name in new or updated content files. Existing hardcoded instances may be refactored over time as the site evolves.
 - **CSS:** Use the CSS variables defined in the `:root` selector within `assets/css/main.css` for colors, fonts, and spacing. Do not introduce new hardcoded colors unless adding them to the `:root` variables.
-- **Hidden Pages:** Pages like `events.md`, `pub-runs.md`, `membership.md`, and `sponsors.md` exist in the repository as placeholders. They should remain unlinked in the main navigation until the club is ready to expand beyond the single-page format.
+- **Hidden Pages:** Pages like `events.md`, `pub-runs.md`, and `membership.md` exist in the repository as placeholders. They should remain unlinked in the main navigation until the club is ready to expand beyond the single-page format.
 
 ## Agents
 

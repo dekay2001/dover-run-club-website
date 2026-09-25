@@ -27,4 +27,4 @@ If your business or group wants to help keep us running, we'd love to hear from 
 - Co-hosting an event
 - Race or event partnerships
 
-<a href="mailto:{{ site.contact_email }}?subject=Supporting%20Dover%20Run%20Club">Email us about supporting the club</a>
+<a href="mailto:{{ site.contact_email }}?subject={{ 'Supporting ' | append: site.title | url_encode | replace: '+', '%20' }}">Email us about supporting the club</a>

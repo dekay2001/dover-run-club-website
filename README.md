@@ -9,7 +9,8 @@ Dover Run Club is a casual, social running group with a long history of Tuesday 
 The site includes:
 
 - **Homepage** - Club info, schedule (Tuesdays 6 PM at The Brick), and about section
-- **Hidden pages** - Events, Pub Runs, Membership, and Sponsors pages exist but are not yet linked (reserved for future use)
+- **Supporters page** - Thanks local businesses that support the club (`/supporters.html`, linked from the footer)
+- **Hidden pages** - Events, Pub Runs, and Membership pages exist but are not yet linked (reserved for future use)
 
 ## 🚀 Quick Start
 
@@ -64,7 +65,7 @@ dover-run-club-website/
 ├── events.md            # Events calendar page
 ├── pub-runs.md          # Pub runs page
 ├── membership.md        # Membership info page
-├── sponsors.md          # Sponsors page
+├── supporters.md        # Supporters page
 ├── CNAME                # Custom domain configuration
 └── Gemfile              # Ruby dependencies
 ```
@@ -159,12 +160,9 @@ Edit `membership.md` to modify:
 - Benefits
 - FAQ
 
-### Adding Sponsors
+### Adding Supporters
 
-Edit `sponsors.md` to:
-- Add new sponsors
-- Update sponsor information
-- Manage sponsorship tiers
+Edit `_data/supporters.yml` to add, update, or remove a supporter (name, website link, and what they contributed). The Supporters page and its list update automatically.
 
 ### Styling Changes
 
