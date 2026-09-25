@@ -329,10 +329,12 @@ main {
     border-color: var(--color-accent);
 }
 
-.card h3 {
+.card h2 {
     color: var(--color-primary);
     margin-bottom: var(--spacing-md);
     font-size: 1.5rem;
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .card p {
