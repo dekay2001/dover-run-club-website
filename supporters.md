@@ -22,7 +22,7 @@ We run and then we pub, in that order. Every Tuesday at 6 PM, {{ site.title }} h
 
 If your business or group wants to help us keep that going, we'd love to hear from you. Helpful kinds of support include:
 
-- Gear, like the singlets and shorts above
+- Gear for club runs
 - Venue space for a run or event
 - Co-hosting an event
 - Race or event partnerships
