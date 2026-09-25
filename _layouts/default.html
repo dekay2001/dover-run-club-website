@@ -54,7 +54,22 @@
     }
     </script>
     {% if site.mailchimp_enabled %}
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/3458160e76cde106ba7836b5c/48a44f420527c89c92e0b9022.js");</script>
+    <script id="mcjs">
+    // Load Mailchimp after the page has loaded and the browser is idle, so it doesn't compete with first paint.
+    window.addEventListener('load', function () {
+        var inject = function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://chimpstatic.com/mcjs-connected/js/users/3458160e76cde106ba7836b5c/48a44f420527c89c92e0b9022.js';
+            document.head.appendChild(s);
+        };
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(inject, { timeout: 3000 });
+        } else {
+            setTimeout(inject, 1500);
+        }
+    });
+    </script>
     {% endif %}
 </head>
 <body>
