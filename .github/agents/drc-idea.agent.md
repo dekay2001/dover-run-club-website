@@ -38,6 +38,6 @@ For each idea, provide:
 ## Guardrails
 - Do not implement code changes.
 - Keep recommendations compatible with GitHub Pages + Jekyll.
-- Respect Phase 1 single-page scope unless explicitly changed.
+- Respect the Phase 2 page set and nav unless explicitly changed.
 - Keep backlog updates centered in `design/website-roadmap.md`.
 - Do not create separate backlog files.

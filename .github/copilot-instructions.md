@@ -9,7 +9,7 @@ Use these files as primary context for all non-trivial work:
 - [Roadmap and canonical idea backlog](../design/website-roadmap.md)
 
 ## Project Overview
-The Dover Run Club website is a Jekyll-based GitHub Pages site. It is currently in a **Phase 1 single-page state**, focusing on the essentials (What, When, Where, Vibe). Additional pages exist in the repository for future expansion but are intentionally hidden from the main navigation.
+The Dover Run Club website is a Jekyll-based GitHub Pages site. It is a **Phase 2 multi-page site** with a newcomer-first homepage and a main navigation (Home, Routes, Our Story, Gallery, Supporters). Events, Pub Runs, and Membership pages exist in the repository for future expansion but are intentionally hidden from the main navigation.
 
 ## Tech Stack
 - **Framework:** Jekyll (hosted on GitHub Pages)
@@ -36,8 +36,9 @@ bundle exec jekyll build
 ```
 
 ## File Structure
-- `index.md`: The main homepage containing all visible content for Phase 1.
-- `_includes/`: Reusable HTML components (e.g., `header.html`, `footer.html`).
+- `index.md`: The newcomer-first homepage: hero, merged "What to Expect" block, Community Photos preview, Stay in Touch, and an Our Roots teaser.
+- `routes.md`, `our-story.md`, `gallery.md`, `supporters.md`: Main navigation pages.
+- `_includes/`: Reusable HTML components (e.g., `header.html` main navigation, `footer.html`).
 - `_layouts/`: Base HTML templates (`default.html`, `page.html`).
 - `assets/css/main.css`: The primary stylesheet containing all custom CSS and theme variables.
 - `design/`: Contains planning documents, roadmaps, and design decisions (e.g., `website-roadmap.md`).
@@ -46,7 +47,7 @@ bundle exec jekyll build
 - **Tone:** Casual, welcoming, running-first, and inclusive of all paces. The post-run hang at The Brick is optional: mention it briefly, never lead with it. Don't use the retired "We run and then we pub" motto.
 - **Variables:** Prefer using `{{ site.title }}` instead of hardcoding the club name in new or updated content files. Existing hardcoded instances may be refactored over time as the site evolves.
 - **CSS:** Use the CSS variables defined in the `:root` selector within `assets/css/main.css` for colors, fonts, and spacing. Do not introduce new hardcoded colors unless adding them to the `:root` variables.
-- **Hidden Pages:** Pages like `events.md`, `pub-runs.md`, and `membership.md` exist in the repository as placeholders. They should remain unlinked in the main navigation until the club is ready to expand beyond the single-page format.
+- **Hidden Pages:** Pages like `events.md`, `pub-runs.md`, and `membership.md` exist in the repository as placeholders. They should remain unlinked in the main navigation until there is real content to activate them.
 
 ## Agents
 

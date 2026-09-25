@@ -35,6 +35,6 @@ Produce clear, reviewable implementation plans only. Do not implement code.
 ## Planning Rules
 - Preserve GitHub Pages compatibility.
 - Keep changes focused and minimal.
-- Respect Phase 1 single-page behavior unless explicitly requested.
+- Respect the Phase 2 page set and nav; keep unfinished pages unpublished unless explicitly requested.
 - Use roadmap backlog as source-of-truth for planned idea execution.
 - Include acceptance criteria that the verify agent can execute directly.
