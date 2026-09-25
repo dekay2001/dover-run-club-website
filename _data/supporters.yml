@@ -1,0 +1,10 @@
+# Seed data for the planned Supporters page (see design/website-roadmap.md); not rendered yet.
+- name: "The Brick"
+  url: "https://thebricknh.com/"
+  contribution: "Club running singlets"
+- name: "Middleton Chiropractic"
+  url: "https://www.middletonchiropractic.net/"
+  contribution: "Club running shorts"
+- name: "C. B. Gitty"
+  url: "https://www.cbgitty.com/"
+  contribution: "Club running singlets"
