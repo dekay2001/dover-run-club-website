@@ -4,7 +4,7 @@ title: Routes
 description: Dover Run Club running routes around Dover, NH — common Tuesday routes plus member-contributed alternates, with shareable per-route links.
 ---
 
-<p class="routes-page-intro">Every Tuesday we run one of these routes from The Brick. Tap "Copy link" on a route to share it, or long-press its title to copy the link without JavaScript.</p>
+<p class="routes-page-intro">Every Tuesday we run one of these routes from The Brick. Tap "Copy link" on a route to share it, or right-click (or press and hold on mobile) its title to copy the link directly from your browser.</p>
 
 <section class="route-section">
     <h2>Common Routes</h2>
