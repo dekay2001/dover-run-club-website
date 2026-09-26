@@ -86,6 +86,9 @@ To use a custom domain (e.g., `yourclub.com` or `www.yourclub.com`):
 1. Visit your site URL (either the default GitHub Pages URL or your custom domain)
 2. Navigate through all pages to ensure they work:
    - Home page (/)
+   - Routes (/routes.html)
+   - Our Story (/our-story.html)
+   - Gallery (/gallery.html)
    - Supporters (/supporters.html)
 
 ## Step 5: Automatic Builds
