@@ -13,11 +13,14 @@
 - `_config_dev.yml`: local override for development (`baseurl: ""`)
 - `_layouts/default.html`: global shell, SEO tag, JSON-LD, includes, and main content slot
 - `_layouts/page.html`: wrapper for non-home content pages
-- `_includes/header.html`: main navigation, phase-1 visibility control
+- `_includes/header.html`: main navigation (Home, Routes, Our Story, Gallery, Supporters) with `aria-current` on the active page
 - `_includes/footer.html`: footer and social link
-- `index.md`: phase-1 homepage and primary user journey
-- `our-story.md`: supporting narrative page linked from homepage content
-- `events.md`, `pub-runs.md`, `membership.md`, `sponsors.md`: placeholder/future pages, intentionally hidden from nav
+- `index.md`: newcomer-first homepage and primary user journey
+- `routes.md`: Routes page, data-driven from `_data/routes.yml` and `_data/member_routes.yml` via `_includes/route-card.html`, linked from nav
+- `our-story.md`: supporting narrative page, linked from nav and homepage "Our Roots" teaser
+- `gallery.md`: Photo gallery, data-driven from `_data/gallery.yml`, linked from nav and homepage preview
+- `supporters.md`: Supporters page, data-driven from `_data/supporters.yml`, linked from nav and footer
+- `events.md`, `pub-runs.md`, `membership.md`: placeholder/future pages, intentionally hidden from nav
 - `assets/css/main.css`: design tokens, layout, and responsive styling
 - `design/website-roadmap.md`: roadmap and backlog source-of-truth
 
@@ -29,8 +32,8 @@
 
 ## Boundaries and Constraints
 - Preserve GitHub Pages compatibility.
-- Keep phase-1 single-page-first behavior unless explicitly changed.
-- Do not expose placeholder pages in nav without a roadmap decision.
+- Keep the main nav focused on Home, Routes, Our Story, Gallery, and Supporters unless explicitly changed.
+- Do not expose placeholder pages (Events, Pub Runs, Membership) in nav without a roadmap decision.
 - Use Liquid URL helpers (`relative_url`, `absolute_url`) for path correctness.
 - Prefer `site.title`/config-backed values over duplicated literals.
 - Use existing CSS variables and avoid ad hoc visual token additions.

@@ -9,14 +9,11 @@
             </div>
             <nav class="site-nav" aria-label="Main navigation">
                 <ul>
-                    <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                    <!-- Future pages - uncomment when ready
-                    <li><a href="{{ '/our-story.html' | relative_url }}">Our Story</a></li>
-                    <li><a href="{{ '/events.html' | relative_url }}">Events</a></li>
-                    <li><a href="{{ '/pub-runs.html' | relative_url }}">Pub Runs</a></li>
-                    <li><a href="{{ '/membership.html' | relative_url }}">Membership</a></li>
-                    <li><a href="{{ '/sponsors.html' | relative_url }}">Sponsors</a></li>
-                    -->
+                    <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a></li>
+                    <li><a href="{{ '/routes.html' | relative_url }}"{% if page.url == '/routes.html' %} aria-current="page"{% endif %}>Routes</a></li>
+                    <li><a href="{{ '/our-story.html' | relative_url }}"{% if page.url == '/our-story.html' %} aria-current="page"{% endif %}>Our Story</a></li>
+                    <li><a href="{{ '/gallery.html' | relative_url }}"{% if page.url == '/gallery.html' %} aria-current="page"{% endif %}>Gallery</a></li>
+                    <li><a href="{{ '/supporters.html' | relative_url }}"{% if page.url == '/supporters.html' %} aria-current="page"{% endif %}>Supporters</a></li>
                 </ul>
             </nav>
         </div>

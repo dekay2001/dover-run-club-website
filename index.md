@@ -5,10 +5,20 @@ title: Home
 
 <div class="hero">
     <h1>Dover Run Club</h1>
-    <p class="hero-tagline">Tuesday nights. All paces welcome. Meet, run, and hang after if you'd like.</p>
-    <p>Tuesday nights · 6 PM · The Brick · Dover, NH</p>
-    <a href="#common-routes" class="button">View Routes &rarr;</a>
+    <p class="hero-tagline">Show up, say hi, and run.</p>
+    <p>Tuesdays · 6 PM · The Brick · Dover, NH</p>
+    <div class="hero-actions">
+        <a href="#what-to-expect" class="button">First run? What to expect</a>
+        <a href="{{ '/routes.html' | relative_url }}" class="button">Routes &rarr;</a>
+    </div>
 </div>
+
+<script>
+// Old shared links pointed at #common-routes on the homepage; send them to the new Routes page.
+if (location.hash === '#common-routes') {
+    location.replace('{{ "/routes.html" | relative_url }}');
+}
+</script>
 
 <div class="hero-image">
     <img 
@@ -24,66 +34,21 @@ title: Home
 
 <hr class="section-divider">
 
-<div class="cards">
-    <div class="card">
-        <h2>🏃 When & Where</h2>
-        <p>Every Tuesday at 6 PM we meet at <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> in downtown Dover, NH. Show up, say hi, and run.</p>
-    </div>
-    
-    <div class="card">
-        <h2>🗺️ Variety of Routes</h2>
-        <p>We mix it up each week with different routes around Dover. Favorites include the <strong><a href="https://www.doverraceseries.org/" target="_blank" rel="noopener">Dover Red's 5-miler</a></strong>, Mount Vernon, Washington, and parts of the community trail. Road routes with hills and flats.</p>
-    </div>
-    
-    <div class="card">
-        <h2>🤝 Optional Post-Run Hang</h2>
-        <p>We start and finish at The Brick. Many runners stick around for food, drinks, and good company, but plenty come just for the run.</p>
-    </div>
-    
-    <div class="card">
-        <h2>👥 All Paces Welcome</h2>
-        <p>Fast, slow, somewhere in between — doesn't matter. We have runners of all abilities and everyone finds their group.</p>
-    </div>
+<div class="page" id="what-to-expect">
+    <h2>What to Expect</h2>
+    <p>
+        There's no fee, no sign-up sheet, and no pressure. Just come as you are.
+    </p>
+    <ul>
+        <li><strong>All paces welcome:</strong> Fast, slow, somewhere in between. Everyone finds their pace group.</li>
+        <li><strong>No experience needed:</strong> Whether it's your first run or your thousandth, you're welcome.</li>
+        <li><strong>Year-round:</strong> Rain or shine, summer or winter.</li>
+        <li><strong>Optional post-run hang:</strong> Some folks stick around at <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> afterward; plenty just come for the run.</li>
+    </ul>
 </div>
 
-<hr class="section-divider">
-
 <div class="page">
-    <h2>About Us</h2>
-    <p>
-        {{ site.title }} has a long history of Tuesday night runs in Dover.
-        What started as a regular Tuesday meetup has grown into a large, loyal group of runners
-        who show up rain or shine, summer or winter.
-    </p>
-    <p>
-        There's no membership fee, no sign-up sheet, and no pressure. Just show up at
-        <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> on Tuesdays at 6 PM and you're part of the crew. We run a variety of
-        routes around Dover and the surrounding area. Many runners hang out at The Brick afterward,
-        but plenty head home after the run—and both are part of the crew.
-    </p>
-    
-    <h3>What to Expect</h3>
-    <ul>
-        <li><strong>No experience needed:</strong> Whether it's your first run or your thousandth, you're welcome</li>
-        <li><strong>Multiple pace groups:</strong> You'll find people running your speed</li>
-        <li><strong>Optional post-run hang:</strong> Some runners stay at <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> afterward, and some just come for the run</li>
-        <li><strong>Year-round:</strong> We run every Tuesday, all year long</li>
-    </ul>
-
-    <h3>Stay in Touch</h3>
-    <p><strong>Safety note:</strong> Contact channels are not monitored for emergencies. If someone is in immediate danger, call 911.</p>
-    <ul>
-        <li><strong>Email:</strong> <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></li>
-        <li><strong>Facebook Group:</strong> <a href="https://www.facebook.com/groups/doverrunclub" target="_blank" rel="noopener">Join the {{ site.title }} group</a></li>
-        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/doverrunclubnh/" target="_blank" rel="noopener">Follow {{ site.title }} on Instagram</a></li>
-        <li><strong>Strava Club:</strong> <a href="https://www.strava.com/clubs/1768701" target="_blank" rel="noopener">Join {{ site.title }} on Strava</a></li>
-        {% if site.merch_url and site.merch_url != blank %}
-        <li><strong>Merch:</strong> Rep the club — <a href="{{ site.merch_url }}" target="_blank" rel="noopener">shop {{ site.title }} gear</a></li>
-        {% endif %}
-        <li><strong>Response expectations:</strong> Messages are checked by volunteers; we aim to respond within 48 hours.</li>
-    </ul>
-
-    <h3>Community Photos</h3>
+    <h2>Community Photos</h2>
     {% assign recent_photos = site.data.gallery | sort: "date" | reverse %}
     <div class="gallery-grid">
         {% for photo in recent_photos limit:2 %}
@@ -99,7 +64,7 @@ title: Home
                 {% endif %}
             </div>
             <div class="gallery-caption-wrapper">
-                <h4 class="gallery-title">{{ photo.title }}</h4>
+                <h3 class="gallery-title">{{ photo.title }}</h3>
                 <div class="gallery-meta">{{ photo.date | date: "%B %d, %Y" }}</div>
                 <p class="gallery-caption">{{ photo.caption | truncatewords: 15 }}</p>
             </div>
@@ -112,24 +77,26 @@ title: Home
     </div>
 </div>
 
-<div id="common-routes" class="page">
-    <h2>Common Routes</h2>
-    {% include route-card.html routes=site.data.routes %}
-</div>
-
 <div class="page">
-    <h2>Alternate Routes</h2>
-    <p class="routes-intro">Routes contributed by club members — same great Dover roads, new perspectives.</p>
-    {% include route-card.html routes=site.data.member_routes %}
+    <h2>Stay in Touch</h2>
+    <p><strong>Safety note:</strong> Contact channels are not monitored for emergencies. If someone is in immediate danger, call 911.</p>
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></li>
+        <li><strong>Facebook Group:</strong> <a href="https://www.facebook.com/groups/doverrunclub" target="_blank" rel="noopener">Join the {{ site.title }} group</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/doverrunclubnh/" target="_blank" rel="noopener">Follow {{ site.title }} on Instagram</a></li>
+        <li><strong>Strava Club:</strong> <a href="https://www.strava.com/clubs/1768701" target="_blank" rel="noopener">Join {{ site.title }} on Strava</a></li>
+        {% if site.merch_url and site.merch_url != blank %}
+        <li><strong>Merch:</strong> Rep the club — <a href="{{ site.merch_url }}" target="_blank" rel="noopener">shop {{ site.title }} gear</a></li>
+        {% endif %}
+        <li><strong>Response expectations:</strong> Messages are checked by volunteers; we aim to respond within 48 hours.</li>
+    </ul>
 </div>
 
 <div class="page">
     <h2>Our Roots</h2>
     <p>
-        Dover's running community has deep history, and many of us first found each other through the energy and camaraderie that <strong><a href="https://six03endurance.com/" target="_blank" rel="noopener">SIX03 Endurance</a></strong> brought to the Seacoast. Those weekly pub runs, group races, and shared miles helped shape the culture we still enjoy today.
-    </p>
-    <p>
-        {{ site.title }} continues that spirit—welcoming runners of all paces, celebrating community, and keeping <strong><a href="https://thebricknh.com/" target="_blank" rel="noopener">The Brick</a></strong> as our home base. We're proud of where we came from, and excited for where we're going together.
+        Dover's running community goes back years, and many of us first connected through the Tuesday pub runs <strong><a href="https://six03endurance.com/" target="_blank" rel="noopener">SIX03 Endurance</a></strong> brought to the Seacoast.
+        {{ site.title }} carries that spirit forward today.
     </p>
     <p>
         <a href="{{ '/our-story.html' | relative_url }}">Read Our Full Story →</a>

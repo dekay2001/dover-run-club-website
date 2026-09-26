@@ -4,12 +4,16 @@ Website for the Dover Run Club — Tuesday nights at 6 PM from The Brick in Dove
 
 ## 🏃 About
 
-Dover Run Club is a casual, social running group with a long history of Tuesday night runs in Dover, NH. All paces welcome. This site is currently a single-page site focused on the essentials. See [design/website-roadmap.md](design/website-roadmap.md) for future plans.
+Dover Run Club is a casual, social running group with a long history of Tuesday night runs in Dover, NH. All paces welcome. The site has a main navigation with a newcomer-first homepage, Routes, Our Story, Gallery, and Supporters pages. See [design/website-roadmap.md](design/website-roadmap.md) for future plans.
 
 The site includes:
 
-- **Homepage** - Club info, schedule (Tuesdays 6 PM at The Brick), and about section
-- **Hidden pages** - Events, Pub Runs, Membership, and Sponsors pages exist but are not yet linked (reserved for future use)
+- **Homepage** - Newcomer-first intro, schedule (Tuesdays 6 PM at The Brick), and a merged "What to Expect" section
+- **Routes page** - Common and member-contributed running routes with shareable per-route links (`/routes.html`)
+- **Our Story page** - Dover running community history and SIX03 roots (`/our-story.html`)
+- **Gallery page** - Photos from runs and community events (`/gallery.html`)
+- **Supporters page** - Thanks local businesses that support the club (`/supporters.html`)
+- **Hidden pages** - Events, Pub Runs, and Membership pages exist but are not yet linked (reserved for future use)
 
 ## 🚀 Quick Start
 
@@ -55,16 +59,21 @@ dover-run-club-website/
 │   ├── default.html     # Base layout
 │   └── page.html        # Page layout
 ├── _includes/           # Reusable components
-│   ├── header.html      # Site header and navigation
-│   └── footer.html      # Site footer
+│   ├── header.html      # Site header and main navigation
+│   ├── footer.html      # Site footer
+│   └── route-card.html  # Shared route card partial
+├── _data/               # Route, gallery, and supporter data files
 ├── assets/
 │   └── css/
 │       └── main.css     # Site styles
 ├── index.md             # Homepage
-├── events.md            # Events calendar page
-├── pub-runs.md          # Pub runs page
-├── membership.md        # Membership info page
-├── sponsors.md          # Sponsors page
+├── routes.md            # Routes page
+├── our-story.md         # Our Story page
+├── gallery.md           # Photo gallery page
+├── supporters.md        # Supporters page
+├── events.md            # Events calendar page (hidden)
+├── pub-runs.md          # Pub runs page (hidden)
+├── membership.md        # Membership info page (hidden)
 ├── CNAME                # Custom domain configuration
 └── Gemfile              # Ruby dependencies
 ```
@@ -159,12 +168,9 @@ Edit `membership.md` to modify:
 - Benefits
 - FAQ
 
-### Adding Sponsors
+### Adding Supporters
 
-Edit `sponsors.md` to:
-- Add new sponsors
-- Update sponsor information
-- Manage sponsorship tiers
+Edit `_data/supporters.yml` to add, update, or remove a supporter (name, website link, and what they contributed). The Supporters page and its list update automatically.
 
 ### Styling Changes
 
